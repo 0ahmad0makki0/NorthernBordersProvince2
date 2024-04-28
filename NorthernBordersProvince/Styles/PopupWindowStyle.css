@@ -1,0 +1,76 @@
+﻿/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: White;
+    margin: auto;
+    padding: 0;
+    width: 520px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: px 0px 15px Black;
+    -webkit-animation: bummer 0.4s;
+    animation: bummer 0.4s;
+    -webkit-transform: scale(0.25,0.25); 
+    transform: scale(0.25,0.25);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bummer {
+    100% {
+        -webkit-transform: scale(1,1); 
+    }
+}
+
+@keyframes bummer {
+    100% {
+        transform: scale(1,1); 
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 10px 16px;
+    background-color: rgb(20,158,83);
+}
+
+.modal-body 
+{
+    padding: 15px;
+    width: 90%;
+}
+
+.modal-footer {
+    padding: 1px 16px;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(20,158,83);
+}

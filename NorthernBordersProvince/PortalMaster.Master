@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PortalMaster.master.cs" Inherits="NorthernBordersProvince.PortalMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>البوابة الإلكترونية لإمارة الحدود الشمالية</title>
+    <link href="Styles/PortalStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function DisableMenuButton(btnID) {
+            var btn = document.getElementById(btnID);
+            btn.className = 'DisabledMenuButton';
+            btn.disabled = true;
+            for (var i = 0; i <= btn.childNodes.length - 1; i++) {
+                btn.childNodes[i].disabled = true;
+            }
+        }
+        function DisableSettingButton() {
+            var btn = document.getElementById("btnSettings");
+            btn.className = 'DisabledMenuButton';
+            btn.disabled = true;
+            for (var i = 0; i <= btn.childNodes.length - 1; i++) {
+                btn.childNodes[i].disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div class="ContainerDiv">
+            <div class="HeaderDiv">
+                <img src="Images/Logo.png" alt="Logo" />
+            </div>
+            <div class="MenuDiv">
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <ul class="Menu">
+                              <li class="BorderLeft">
+                                  <a id="btnHome" href="default.aspx" class="MenuButton">
+                                        <img src="Images/MenuButtonsImages/Home.png" alt="الصفحة الرئيسية"/>
+                                        <br />
+                                        <label>الصفحة الرئيسية</label>
+                                  </a>
+                              </li>
+                              <li class="BorderLeft">
+                                  <a id="btnNews" href="NewsMain.aspx" class="MenuButton">
+                                        <img src="Images/MenuButtonsImages/News.png" alt="الأخبار"/>
+                                        <br />
+                                        <label>الأخبار</label>
+                                  </a>
+                              </li>
+                              <li class="BorderLeft">
+                                  <a id="btnAnnouncements" href="AnnouncementsMain.aspx" class="MenuButton">
+                                        <img src="Images/MenuButtonsImages/Announcements.png" alt="التعاميم"/>
+                                        <br />
+                                        <label>التعاميم</label>
+                                  </a>
+                              </li>
+                              <li class="BorderLeft">
+                                  <a id="btnLinks" href="ImportantLinksMain.aspx" class="MenuButton">
+                                        <img src="Images/MenuButtonsImages/Links.png" alt="روابط هامة"/>
+                                        <br />
+                                        <label>روابط هامة</label>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a id="btnEServices" href="EServicesMain.aspx" class="MenuButton">
+                                        <img src="Images/MenuButtonsImages/ElectronicServices.png" alt="الخدمات الإلكترونية"/>
+                                        <br />
+                                        <label>الخدمات الإلكترونية</label>
+                                  </a>
+                              </li>
+                            </ul>
+                        </td>
+                        <td style="text-align: right; width: 75px; vertical-align:middle;">
+                            <ul class="Menu">
+                              <li style="margin:10px;">
+                                  <a id="btnSettings" href="LoginPage.aspx?Mode=PortalSettings" class="RotatingMenuButton">
+                                        <img src="Images/MenuButtonsImages/Settings.png" alt="Home"/>
+                                  </a>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ContentsDiv">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="FooterDiv">
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                        1438 هـ © إمارة منطقة الحدود الشمالية
+                        </td>
+                        <td style="text-align:left;">
+                        برمجة مؤسسة الحلول البناءة للاتصالات وتقنية المعلومات www.consolcit.com
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </ContentTemplate>
+    </asp:UpdatePanel>
+    </form>
+</body>
+</html>

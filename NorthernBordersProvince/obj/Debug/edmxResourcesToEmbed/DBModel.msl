@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NorthernBordersProvinceDBModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="HomeSlides">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.HomeSlide">
+        <MappingFragment StoreEntitySet="HomeSlide">
+          <ScalarProperty Name="HomeSlide_Id" ColumnName="HomeSlide_Id" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RedirectingLink" ColumnName="RedirectingLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetNewsById" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetNewsById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetNewsById_Result">
+          <ScalarProperty Name="News_Id" ColumnName="News_Id" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Contents" ColumnName="Contents" />
+          <ScalarProperty Name="NewsDate" ColumnName="NewsDate" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IncreaseNewsViewCount" FunctionName="NorthernBordersProvinceDBModel.Store.sp_IncreaseNewsView" />
+    <FunctionImportMapping FunctionImportName="IncreaseAnnouncementViewCount" FunctionName="NorthernBordersProvinceDBModel.Store.sp_IncreaseAnnouncementView" />
+    <FunctionImportMapping FunctionImportName="GetAnnouncementById" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetAnnouncementById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetAnnouncementById_Result">
+          <ScalarProperty Name="Announcement_Id" ColumnName="Announcement_Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="AnnounementDate" ColumnName="AnnounementDate" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetEServices_Result" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetEServices">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetEServices_Result">
+          <ScalarProperty Name="EService_Id" ColumnName="EService_Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PortalSettingsAuthentication" FunctionName="NorthernBordersProvinceDBModel.Store.sp_PortalSettingsAuthentication">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.PortalSettingsAuthentication_Result">
+          <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+          <ScalarProperty Name="Activated" ColumnName="Activated" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetHijiriDate" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetHijiriDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetHijiriDate_Result">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetGeorgianDate" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetGeorgianDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetGeorgianDate_Result">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="NewsDate" ColumnName="NewsDate" />
+          <ScalarProperty Name="Contents" ColumnName="Contents" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="News_Id" ColumnName="News_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Announcements">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.Announcement">
+        <MappingFragment StoreEntitySet="Announcement">
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Announcement_Id" ColumnName="Announcement_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EServices">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.EService">
+        <MappingFragment StoreEntitySet="EService">
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="EService_Id" ColumnName="EService_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImportantLinks">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ImportantLink">
+        <MappingFragment StoreEntitySet="ImportantLink">
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ImportantLink_Id" ColumnName="ImportantLink_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalSettingsUsers">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PortalSettingsUser">
+        <MappingFragment StoreEntitySet="PortalSettingsUser">
+          <ScalarProperty Name="Activated" ColumnName="Activated" />
+          <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetPortalSettingsUserPermission" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetPortalSettingsUserPermission">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetPortalSettingsUserPermission_Result">
+          <ScalarProperty Name="IsAuthorized" ColumnName="IsAuthorized" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetPortalSettingsUserPermissions" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetPortalSettingsUserPermissions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetPortalSettingsUserPermissions_Result">
+          <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+          <ScalarProperty Name="PortalSettingsPage_Id" ColumnName="PortalSettingsPage_Id" />
+          <ScalarProperty Name="PortalSettingsUserPermission_Id" ColumnName="PortalSettingsUserPermission_Id" />
+          <ScalarProperty Name="PortalSettingsPageTitle" ColumnName="PortalSettingsPageTitle" />
+          <ScalarProperty Name="CanView" ColumnName="CanView" />
+          <ScalarProperty Name="CanAdd" ColumnName="CanAdd" />
+          <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+          <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PortalSettingsUserPermissions">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PortalSettingsUserPermission">
+        <MappingFragment StoreEntitySet="PortalSettingsUserPermission">
+          <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+          <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+          <ScalarProperty Name="CanAdd" ColumnName="CanAdd" />
+          <ScalarProperty Name="CanView" ColumnName="CanView" />
+          <ScalarProperty Name="PortalSettingsPage_Id" ColumnName="PortalSettingsPage_Id" />
+          <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+          <ScalarProperty Name="PortalSettingsUserPermission_Id" ColumnName="PortalSettingsUserPermission_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SecurityAffairsAuthentication" FunctionName="NorthernBordersProvinceDBModel.Store.sp_SecurityAffairsAuthentication">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_SecurityAffairsAuthentication_Result">
+          <ScalarProperty Name="SecurityAffairsUser_Id" ColumnName="SecurityAffairsUser_Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+          <ScalarProperty Name="Activated" ColumnName="Activated" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="EducationLevels">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.EducationLevel">
+        <MappingFragment StoreEntitySet="EducationLevel">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="EducationLevel_Id" ColumnName="EducationLevel_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeopleDatas">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PeopleData">
+        <MappingFragment StoreEntitySet="PeopleData">
+          <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="EducationLevel_Id" ColumnName="EducationLevel_Id" />
+          <ScalarProperty Name="ResidencePlace" ColumnName="ResidencePlace" />
+          <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="PeopleData_Id" ColumnName="PeopleData_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeopleDataNotes">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PeopleDataNote">
+        <MappingFragment StoreEntitySet="PeopleDataNote">
+          <ScalarProperty Name="PeopleData_Id" ColumnName="PeopleData_Id" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="PeopeDataNote_Id" ColumnName="PeopeDataNote_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeopleDataAttachments">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PeopleDataAttachment">
+        <MappingFragment StoreEntitySet="PeopleDataAttachment">
+          <ScalarProperty Name="PeopleData_Id" ColumnName="PeopleData_Id" />
+          <ScalarProperty Name="UploadedTime" ColumnName="UploadedTime" />
+          <ScalarProperty Name="UploadedDate" ColumnName="UploadedDate" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PeopleDataAttachment_Id" ColumnName="PeopleDataAttachment_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityAffairsUsers">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsUser">
+        <MappingFragment StoreEntitySet="SecurityAffairsUser">
+          <ScalarProperty Name="Activated" ColumnName="Activated" />
+          <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="SecurityAffairsUser_Id" ColumnName="SecurityAffairsUser_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityAffairsPageRoles">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsPageRole">
+        <MappingFragment StoreEntitySet="SecurityAffairsPageRole">
+          <ScalarProperty Name="SecurityAffairsRole_Id" ColumnName="SecurityAffairsRole_Id" />
+          <ScalarProperty Name="SecurityAffairsPage_Id" ColumnName="SecurityAffairsPage_Id" />
+          <ScalarProperty Name="SecurityAffairsPageRole_Id" ColumnName="SecurityAffairsPageRole_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityAffairsUserRoles">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsUserRole">
+        <MappingFragment StoreEntitySet="SecurityAffairsUserRole">
+          <ScalarProperty Name="SecurityAffairsPageRole_Id" ColumnName="SecurityAffairsPageRole_Id" />
+          <ScalarProperty Name="SecurityAffairsUser_Id" ColumnName="SecurityAffairsUser_Id" />
+          <ScalarProperty Name="SecurityAffairsUserRole_Id" ColumnName="SecurityAffairsUserRole_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetPeopleDataReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetPeopleDataReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetPeopleDataReport_Result">
+          <ScalarProperty Name="PeopleDate_Id" ColumnName="PeopleDate_Id" />
+          <ScalarProperty Name="PeopleDate_Id_string" ColumnName="PeopleDate_Id_string" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="DOB_string" ColumnName="DOB_string" />
+          <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+          <ScalarProperty Name="ResidencePlace" ColumnName="ResidencePlace" />
+          <ScalarProperty Name="EducationLevelString" ColumnName="EducationLevelString" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+          <ScalarProperty Name="HasNotes" ColumnName="HasNotes" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetSecurityAffairsUsersLogsReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetSecurityAffairsUsersLogsReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetSecurityAffairsUsersLogsReport_Result">
+          <ScalarProperty Name="Date_string" ColumnName="Date_string" />
+          <ScalarProperty Name="Time_string" ColumnName="Time_string" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+          <ScalarProperty Name="RoleTitle" ColumnName="RoleTitle" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UserLog_Id" ColumnName="UserLog_Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetSecurityAffairsUserPermission" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetSecurityAffairsUserPermission">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetSecurityAffairsUserPermission_Result">
+          <ScalarProperty Name="IsAuthorized" ColumnName="IsAuthorized" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AddSecurityAffairsUserLog" FunctionName="NorthernBordersProvinceDBModel.Store.sp_AddSecurityAffairsUserLog" />
+    <EntitySetMapping Name="SecurityAffairsPages">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsPage">
+        <MappingFragment StoreEntitySet="SecurityAffairsPage">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SecurityAffairsPage_Id" ColumnName="SecurityAffairsPage_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityAffairsRoles">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsRole">
+        <MappingFragment StoreEntitySet="SecurityAffairsRole">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SecurityAffairsRole_Id" ColumnName="SecurityAffairsRole_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProvisionsMonitoringUsers">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringUser">
+        <MappingFragment StoreEntitySet="ProvisionsMonitoringUser">
+          <ScalarProperty Name="Activated" ColumnName="Activated" />
+          <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="ProvisionsMonitoringUser_Id" ColumnName="ProvisionsMonitoringUser_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ProvisionsMonitoringAuthentication" FunctionName="NorthernBordersProvinceDBModel.Store.sp_ProvisionsMonitoringAuthentication">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_ProvisionsMonitoringAuthentication_Result">
+          <ScalarProperty Name="ProvisionsMonitoringUser_Id" ColumnName="ProvisionsMonitoringUser_Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+          <ScalarProperty Name="Activated" ColumnName="Activated" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="RuleDatas">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleData">
+        <MappingFragment StoreEntitySet="RuleData">
+          <ScalarProperty Name="Nationality_Id" ColumnName="Nationality_Id" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="RuleSubType_Id" ColumnName="RuleSubType_Id" />
+          <ScalarProperty Name="RuleStatus_Id" ColumnName="RuleStatus_Id" />
+          <ScalarProperty Name="SupportingDecisionDate" ColumnName="SupportingDecisionDate" />
+          <ScalarProperty Name="SupportingDecisionNumber" ColumnName="SupportingDecisionNumber" />
+          <ScalarProperty Name="LegalDecisionDate" ColumnName="LegalDecisionDate" />
+          <ScalarProperty Name="LegalDecisionNumber" ColumnName="LegalDecisionNumber" />
+          <ScalarProperty Name="AccusedSSN" ColumnName="AccusedSSN" />
+          <ScalarProperty Name="AccusedName" ColumnName="AccusedName" />
+          <ScalarProperty Name="IssuedLetterDate" ColumnName="IssuedLetterDate" />
+          <ScalarProperty Name="IssuedLetterNumber" ColumnName="IssuedLetterNumber" />
+          <ScalarProperty Name="CaseNumber" ColumnName="CaseNumber" />
+          <ScalarProperty Name="RuleData_Id" ColumnName="RuleData_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleStatus">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleStatu">
+        <MappingFragment StoreEntitySet="RuleStatus">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RuleStatus_Id" ColumnName="RuleStatus_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleDataAttachments">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleDataAttachment">
+        <MappingFragment StoreEntitySet="RuleDataAttachment">
+          <ScalarProperty Name="RuleData_Id" ColumnName="RuleData_Id" />
+          <ScalarProperty Name="UploadedTime" ColumnName="UploadedTime" />
+          <ScalarProperty Name="UploadedDate" ColumnName="UploadedDate" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RuleDataAttachment_Id" ColumnName="RuleDataAttachment_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetRuleDataReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetRuleDataReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetRuleDataReport_Result">
+          <ScalarProperty Name="RuleDate_Id" ColumnName="RuleDate_Id" />
+          <ScalarProperty Name="RuleDate_Id_string" ColumnName="RuleDate_Id_string" />
+          <ScalarProperty Name="CaseNumber" ColumnName="CaseNumber" />
+          <ScalarProperty Name="IssuedLetterNumber" ColumnName="IssuedLetterNumber" />
+          <ScalarProperty Name="IssuedLetterDate" ColumnName="IssuedLetterDate" />
+          <ScalarProperty Name="IssuedLetterDate_string" ColumnName="IssuedLetterDate_string" />
+          <ScalarProperty Name="AccusedName" ColumnName="AccusedName" />
+          <ScalarProperty Name="AccusedSSN" ColumnName="AccusedSSN" />
+          <ScalarProperty Name="LegalDecisionNumber" ColumnName="LegalDecisionNumber" />
+          <ScalarProperty Name="LegalDecisionDate" ColumnName="LegalDecisionDate" />
+          <ScalarProperty Name="LegalDecisionDate_string" ColumnName="LegalDecisionDate_string" />
+          <ScalarProperty Name="SupportingDecisionNumber" ColumnName="SupportingDecisionNumber" />
+          <ScalarProperty Name="SupportingDecisionDate" ColumnName="SupportingDecisionDate" />
+          <ScalarProperty Name="SupportingDecisionDate_string" ColumnName="SupportingDecisionDate_string" />
+          <ScalarProperty Name="RuleStatusTitle" ColumnName="RuleStatusTitle" />
+          <ScalarProperty Name="RuleTypeTitle" ColumnName="RuleTypeTitle" />
+          <ScalarProperty Name="NationalityTitle" ColumnName="NationalityTitle" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="ProvisionsMonitoringPages">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringPage">
+        <MappingFragment StoreEntitySet="ProvisionsMonitoringPage">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProvisionsMonitoringPage_Id" ColumnName="ProvisionsMonitoringPage_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProvisionsMonitoringPageRoles">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringPageRole">
+        <MappingFragment StoreEntitySet="ProvisionsMonitoringPageRole">
+          <ScalarProperty Name="ProvisionsMonitoringRole_Id" ColumnName="ProvisionsMonitoringRole_Id" />
+          <ScalarProperty Name="ProvisionsMonitoringPage_Id" ColumnName="ProvisionsMonitoringPage_Id" />
+          <ScalarProperty Name="ProvisionsMonitoringPageRole_Id" ColumnName="ProvisionsMonitoringPageRole_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProvisionsMonitoringRoles">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringRole">
+        <MappingFragment StoreEntitySet="ProvisionsMonitoringRole">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ProvisionsMonitoringRole_Id" ColumnName="ProvisionsMonitoringRole_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProvisionsMonitoringUserRoles">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringUserRole">
+        <MappingFragment StoreEntitySet="ProvisionsMonitoringUserRole">
+          <ScalarProperty Name="ProvisionsMonitoringPageRole_Id" ColumnName="ProvisionsMonitoringPageRole_Id" />
+          <ScalarProperty Name="ProvisionsMonitoringUser_Id" ColumnName="ProvisionsMonitoringUser_Id" />
+          <ScalarProperty Name="ProvisionsMonitoringUserRole_Id" ColumnName="ProvisionsMonitoringUserRole_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AddProvisionsMonitoringUserLog" FunctionName="NorthernBordersProvinceDBModel.Store.sp_AddProvisionsMonitoringUserLog" />
+    <FunctionImportMapping FunctionImportName="GetProvisionsMonitoringUserPermission" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetProvisionsMonitoringUserPermission">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetProvisionsMonitoringUserPermission_Result">
+          <ScalarProperty Name="IsAuthorized" ColumnName="IsAuthorized" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetProvisionsMonitoringUsersLogsReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetProvisionsMonitoringUsersLogsReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetProvisionsMonitoringUsersLogsReport_Result">
+          <ScalarProperty Name="UserLog_Id" ColumnName="UserLog_Id" />
+          <ScalarProperty Name="Date_string" ColumnName="Date_string" />
+          <ScalarProperty Name="Time_string" ColumnName="Time_string" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+          <ScalarProperty Name="RoleTitle" ColumnName="RoleTitle" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Nationalities">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.Nationality">
+        <MappingFragment StoreEntitySet="Nationality">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Nationality_Id" ColumnName="Nationality_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleSubTypes">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleSubType">
+        <MappingFragment StoreEntitySet="RuleSubType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RuleType_Id" ColumnName="RuleType_Id" />
+          <ScalarProperty Name="RuleSubType_Id" ColumnName="RuleSubType_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RuleTypes">
+      <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleType">
+        <MappingFragment StoreEntitySet="RuleType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RuleType_Id" ColumnName="RuleType_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetRuleDataReportByGrouping" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetRuleDataReportByGrouping">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetRuleDataReportByGrouping_Result">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="NumberOfRules" ColumnName="NumberOfRules" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

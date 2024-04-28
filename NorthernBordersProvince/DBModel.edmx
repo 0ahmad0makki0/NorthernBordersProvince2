@@ -1,0 +1,2110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NorthernBordersProvinceDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="NorthernBordersProvinceDBModelStoreContainer">
+          <EntitySet Name="Announcement" EntityType="NorthernBordersProvinceDBModel.Store.Announcement" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EducationLevel" EntityType="NorthernBordersProvinceDBModel.Store.EducationLevel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EService" EntityType="NorthernBordersProvinceDBModel.Store.EService" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HomeSlide" EntityType="NorthernBordersProvinceDBModel.Store.HomeSlide" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ImportantLink" EntityType="NorthernBordersProvinceDBModel.Store.ImportantLink" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Nationality" EntityType="NorthernBordersProvinceDBModel.Store.Nationality" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="News" EntityType="NorthernBordersProvinceDBModel.Store.News" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PeopleData" EntityType="NorthernBordersProvinceDBModel.Store.PeopleData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PeopleDataAttachment" EntityType="NorthernBordersProvinceDBModel.Store.PeopleDataAttachment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PeopleDataNote" EntityType="NorthernBordersProvinceDBModel.Store.PeopleDataNote" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PortalSettingsUser" EntityType="NorthernBordersProvinceDBModel.Store.PortalSettingsUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PortalSettingsUserPermission" EntityType="NorthernBordersProvinceDBModel.Store.PortalSettingsUserPermission" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProvisionsMonitoringPage" EntityType="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringPage" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProvisionsMonitoringPageRole" EntityType="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringPageRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProvisionsMonitoringRole" EntityType="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProvisionsMonitoringUser" EntityType="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProvisionsMonitoringUserRole" EntityType="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringUserRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RuleData" EntityType="NorthernBordersProvinceDBModel.Store.RuleData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RuleDataAttachment" EntityType="NorthernBordersProvinceDBModel.Store.RuleDataAttachment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RuleStatus" EntityType="NorthernBordersProvinceDBModel.Store.RuleStatus" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RuleSubType" EntityType="NorthernBordersProvinceDBModel.Store.RuleSubType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RuleType" EntityType="NorthernBordersProvinceDBModel.Store.RuleType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SecurityAffairsPage" EntityType="NorthernBordersProvinceDBModel.Store.SecurityAffairsPage" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SecurityAffairsPageRole" EntityType="NorthernBordersProvinceDBModel.Store.SecurityAffairsPageRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SecurityAffairsRole" EntityType="NorthernBordersProvinceDBModel.Store.SecurityAffairsRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SecurityAffairsUser" EntityType="NorthernBordersProvinceDBModel.Store.SecurityAffairsUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SecurityAffairsUserRole" EntityType="NorthernBordersProvinceDBModel.Store.SecurityAffairsUserRole" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__PeopleDat__Educa__534D60F1" Association="NorthernBordersProvinceDBModel.Store.FK__PeopleDat__Educa__534D60F1">
+            <End Role="EducationLevel" EntitySet="EducationLevel" />
+            <End Role="PeopleData" EntitySet="PeopleData" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PeopleDat__Peopl__5629CD9C" Association="NorthernBordersProvinceDBModel.Store.FK__PeopleDat__Peopl__5629CD9C">
+            <End Role="PeopleData" EntitySet="PeopleData" />
+            <End Role="PeopleDataNote" EntitySet="PeopleDataNote" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PeopleDat__Peopl__59063A47" Association="NorthernBordersProvinceDBModel.Store.FK__PeopleDat__Peopl__59063A47">
+            <End Role="PeopleData" EntitySet="PeopleData" />
+            <End Role="PeopleDataAttachment" EntitySet="PeopleDataAttachment" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PortalSet__Porta__47DBAE45" Association="NorthernBordersProvinceDBModel.Store.FK__PortalSet__Porta__47DBAE45">
+            <End Role="PortalSettingsUser" EntitySet="PortalSettingsUser" />
+            <End Role="PortalSettingsUserPermission" EntitySet="PortalSettingsUserPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Provision__Provi__2CF2ADDF" Association="NorthernBordersProvinceDBModel.Store.FK__Provision__Provi__2CF2ADDF">
+            <End Role="ProvisionsMonitoringPage" EntitySet="ProvisionsMonitoringPage" />
+            <End Role="ProvisionsMonitoringPageRole" EntitySet="ProvisionsMonitoringPageRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Provision__Provi__2DE6D218" Association="NorthernBordersProvinceDBModel.Store.FK__Provision__Provi__2DE6D218">
+            <End Role="ProvisionsMonitoringRole" EntitySet="ProvisionsMonitoringRole" />
+            <End Role="ProvisionsMonitoringPageRole" EntitySet="ProvisionsMonitoringPageRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Provision__Provi__30C33EC3" Association="NorthernBordersProvinceDBModel.Store.FK__Provision__Provi__30C33EC3">
+            <End Role="ProvisionsMonitoringUser" EntitySet="ProvisionsMonitoringUser" />
+            <End Role="ProvisionsMonitoringUserRole" EntitySet="ProvisionsMonitoringUserRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Provision__Provi__31B762FC" Association="NorthernBordersProvinceDBModel.Store.FK__Provision__Provi__31B762FC">
+            <End Role="ProvisionsMonitoringPageRole" EntitySet="ProvisionsMonitoringPageRole" />
+            <End Role="ProvisionsMonitoringUserRole" EntitySet="ProvisionsMonitoringUserRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RuleDat__Peopl__59063A47" Association="NorthernBordersProvinceDBModel.Store.FK__RuleDat__Peopl__59063A47">
+            <End Role="RuleData" EntitySet="RuleData" />
+            <End Role="RuleDataAttachment" EntitySet="RuleDataAttachment" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RuleData__Nation__55009F39" Association="NorthernBordersProvinceDBModel.Store.FK__RuleData__Nation__55009F39">
+            <End Role="Nationality" EntitySet="Nationality" />
+            <End Role="RuleData" EntitySet="RuleData" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RuleData__RuleSu__540C7B00" Association="NorthernBordersProvinceDBModel.Store.FK__RuleData__RuleSu__540C7B00">
+            <End Role="RuleSubType" EntitySet="RuleSubType" />
+            <End Role="RuleData" EntitySet="RuleData" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RuleSubTy__RuleT__51300E55" Association="NorthernBordersProvinceDBModel.Store.FK__RuleSubTy__RuleT__51300E55">
+            <End Role="RuleType" EntitySet="RuleType" />
+            <End Role="RuleSubType" EntitySet="RuleSubType" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SecurityA__Secur__6B24EA82" Association="NorthernBordersProvinceDBModel.Store.FK__SecurityA__Secur__6B24EA82">
+            <End Role="SecurityAffairsPage" EntitySet="SecurityAffairsPage" />
+            <End Role="SecurityAffairsPageRole" EntitySet="SecurityAffairsPageRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SecurityA__Secur__6C190EBB" Association="NorthernBordersProvinceDBModel.Store.FK__SecurityA__Secur__6C190EBB">
+            <End Role="SecurityAffairsRole" EntitySet="SecurityAffairsRole" />
+            <End Role="SecurityAffairsPageRole" EntitySet="SecurityAffairsPageRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SecurityA__Secur__6EF57B66" Association="NorthernBordersProvinceDBModel.Store.FK__SecurityA__Secur__6EF57B66">
+            <End Role="SecurityAffairsUser" EntitySet="SecurityAffairsUser" />
+            <End Role="SecurityAffairsUserRole" EntitySet="SecurityAffairsUserRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SecurityA__Secur__6FE99F9F" Association="NorthernBordersProvinceDBModel.Store.FK__SecurityA__Secur__6FE99F9F">
+            <End Role="SecurityAffairsPageRole" EntitySet="SecurityAffairsPageRole" />
+            <End Role="SecurityAffairsUserRole" EntitySet="SecurityAffairsUserRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RuleData_RuleStatus" Association="NorthernBordersProvinceDBModel.Store.FK_RuleData_RuleStatus">
+            <End Role="RuleStatus" EntitySet="RuleStatus" />
+            <End Role="RuleData" EntitySet="RuleData" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Announcement">
+          <Key>
+            <PropertyRef Name="Announcement_Id" />
+          </Key>
+          <Property Name="Announcement_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+          <Property Name="Number" Type="nvarchar(max)" />
+          <Property Name="Date" Type="date" />
+          <Property Name="ViewCount" Type="bigint" />
+        </EntityType>
+        <EntityType Name="EducationLevel">
+          <Key>
+            <PropertyRef Name="EducationLevel_Id" />
+          </Key>
+          <Property Name="EducationLevel_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="EService">
+          <Key>
+            <PropertyRef Name="EService_Id" />
+          </Key>
+          <Property Name="EService_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="HomeSlide">
+          <Key>
+            <PropertyRef Name="HomeSlide_Id" />
+          </Key>
+          <Property Name="HomeSlide_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="RedirectingLink" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ImportantLink">
+          <Key>
+            <PropertyRef Name="ImportantLink_Id" />
+          </Key>
+          <Property Name="ImportantLink_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Nationality">
+          <Key>
+            <PropertyRef Name="Nationality_Id" />
+          </Key>
+          <Property Name="Nationality_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="News_Id" />
+          </Key>
+          <Property Name="News_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="nvarchar(max)" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Contents" Type="nvarchar(max)" />
+          <Property Name="NewsDate" Type="date" />
+          <Property Name="ViewCount" Type="bigint" />
+        </EntityType>
+        <EntityType Name="PeopleData">
+          <Key>
+            <PropertyRef Name="PeopleData_Id" />
+          </Key>
+          <Property Name="PeopleData_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="nvarchar(max)" />
+          <Property Name="SSN" Type="nvarchar(max)" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="BirthPlace" Type="nvarchar(max)" />
+          <Property Name="ResidencePlace" Type="nvarchar(max)" />
+          <Property Name="EducationLevel_Id" Type="bigint" />
+          <Property Name="JobTitle" Type="nvarchar(max)" />
+          <Property Name="WorkPlace" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="PeopleDataAttachment">
+          <Key>
+            <PropertyRef Name="PeopleDataAttachment_Id" />
+          </Key>
+          <Property Name="PeopleDataAttachment_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Url" Type="nvarchar(max)" />
+          <Property Name="UploadedDate" Type="date" />
+          <Property Name="UploadedTime" Type="time" Precision="0" />
+          <Property Name="PeopleData_Id" Type="bigint" />
+        </EntityType>
+        <EntityType Name="PeopleDataNote">
+          <Key>
+            <PropertyRef Name="PeopeDataNote_Id" />
+          </Key>
+          <Property Name="PeopeDataNote_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="PeopleData_Id" Type="bigint" />
+        </EntityType>
+        <EntityType Name="PortalSettingsUser">
+          <Key>
+            <PropertyRef Name="PortalSettingsUser_Id" />
+          </Key>
+          <Property Name="PortalSettingsUser_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="nvarchar(max)" />
+          <Property Name="LocalLoginPassword" Type="nvarchar(max)" />
+          <Property Name="Activated" Type="bit" />
+        </EntityType>
+        <EntityType Name="PortalSettingsUserPermission">
+          <Key>
+            <PropertyRef Name="PortalSettingsUserPermission_Id" />
+          </Key>
+          <Property Name="PortalSettingsUserPermission_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PortalSettingsUser_Id" Type="bigint" />
+          <Property Name="PortalSettingsPage_Id" Type="bigint" />
+          <Property Name="CanView" Type="bit" />
+          <Property Name="CanAdd" Type="bit" />
+          <Property Name="CanEdit" Type="bit" />
+          <Property Name="CanDelete" Type="bit" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringPage">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringPage_Id" />
+          </Key>
+          <Property Name="ProvisionsMonitoringPage_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringPageRole">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringPageRole_Id" />
+          </Key>
+          <Property Name="ProvisionsMonitoringPageRole_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProvisionsMonitoringPage_Id" Type="bigint" />
+          <Property Name="ProvisionsMonitoringRole_Id" Type="bigint" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringRole">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringRole_Id" />
+          </Key>
+          <Property Name="ProvisionsMonitoringRole_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringUser">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringUser_Id" />
+          </Key>
+          <Property Name="ProvisionsMonitoringUser_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="nvarchar(max)" />
+          <Property Name="LocalLoginPassword" Type="nvarchar(max)" />
+          <Property Name="Activated" Type="bit" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringUserRole">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringUserRole_Id" />
+          </Key>
+          <Property Name="ProvisionsMonitoringUserRole_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProvisionsMonitoringUser_Id" Type="bigint" />
+          <Property Name="ProvisionsMonitoringPageRole_Id" Type="bigint" />
+        </EntityType>
+        <EntityType Name="RuleData">
+          <Key>
+            <PropertyRef Name="RuleData_Id" />
+          </Key>
+          <Property Name="RuleData_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CaseNumber" Type="nvarchar(max)" />
+          <Property Name="IssuedLetterNumber" Type="nvarchar(max)" />
+          <Property Name="IssuedLetterDate" Type="date" />
+          <Property Name="AccusedName" Type="nvarchar(max)" />
+          <Property Name="AccusedSSN" Type="nvarchar(max)" />
+          <Property Name="LegalDecisionNumber" Type="nvarchar(max)" />
+          <Property Name="LegalDecisionDate" Type="date" />
+          <Property Name="SupportingDecisionNumber" Type="nvarchar(max)" />
+          <Property Name="SupportingDecisionDate" Type="date" />
+          <Property Name="RuleStatus_Id" Type="bigint" />
+          <Property Name="RuleSubType_Id" Type="bigint" />
+          <Property Name="Occupation" Type="nvarchar(max)" />
+          <Property Name="Nationality_Id" Type="bigint" />
+        </EntityType>
+        <EntityType Name="RuleDataAttachment">
+          <Key>
+            <PropertyRef Name="RuleDataAttachment_Id" />
+          </Key>
+          <Property Name="RuleDataAttachment_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Url" Type="nvarchar(max)" />
+          <Property Name="UploadedDate" Type="date" />
+          <Property Name="UploadedTime" Type="time" Precision="0" />
+          <Property Name="RuleData_Id" Type="bigint" />
+        </EntityType>
+        <EntityType Name="RuleStatus">
+          <Key>
+            <PropertyRef Name="RuleStatus_Id" />
+          </Key>
+          <Property Name="RuleStatus_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="RuleSubType">
+          <Key>
+            <PropertyRef Name="RuleSubType_Id" />
+          </Key>
+          <Property Name="RuleSubType_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RuleType_Id" Type="bigint" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="RuleType">
+          <Key>
+            <PropertyRef Name="RuleType_Id" />
+          </Key>
+          <Property Name="RuleType_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsPage">
+          <Key>
+            <PropertyRef Name="SecurityAffairsPage_Id" />
+          </Key>
+          <Property Name="SecurityAffairsPage_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsPageRole">
+          <Key>
+            <PropertyRef Name="SecurityAffairsPageRole_Id" />
+          </Key>
+          <Property Name="SecurityAffairsPageRole_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SecurityAffairsPage_Id" Type="bigint" />
+          <Property Name="SecurityAffairsRole_Id" Type="bigint" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsRole">
+          <Key>
+            <PropertyRef Name="SecurityAffairsRole_Id" />
+          </Key>
+          <Property Name="SecurityAffairsRole_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsUser">
+          <Key>
+            <PropertyRef Name="SecurityAffairsUser_Id" />
+          </Key>
+          <Property Name="SecurityAffairsUser_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="nvarchar(max)" />
+          <Property Name="LocalLoginPassword" Type="nvarchar(max)" />
+          <Property Name="Activated" Type="bit" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsUserRole">
+          <Key>
+            <PropertyRef Name="SecurityAffairsUserRole_Id" />
+          </Key>
+          <Property Name="SecurityAffairsUserRole_Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SecurityAffairsUser_Id" Type="bigint" />
+          <Property Name="SecurityAffairsPageRole_Id" Type="bigint" />
+        </EntityType>
+        <Association Name="FK__PeopleDat__Educa__534D60F1">
+          <End Role="EducationLevel" Type="NorthernBordersProvinceDBModel.Store.EducationLevel" Multiplicity="0..1" />
+          <End Role="PeopleData" Type="NorthernBordersProvinceDBModel.Store.PeopleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationLevel">
+              <PropertyRef Name="EducationLevel_Id" />
+            </Principal>
+            <Dependent Role="PeopleData">
+              <PropertyRef Name="EducationLevel_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PeopleDat__Peopl__5629CD9C">
+          <End Role="PeopleData" Type="NorthernBordersProvinceDBModel.Store.PeopleData" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PeopleDataNote" Type="NorthernBordersProvinceDBModel.Store.PeopleDataNote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PeopleData">
+              <PropertyRef Name="PeopleData_Id" />
+            </Principal>
+            <Dependent Role="PeopleDataNote">
+              <PropertyRef Name="PeopleData_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PeopleDat__Peopl__59063A47">
+          <End Role="PeopleData" Type="NorthernBordersProvinceDBModel.Store.PeopleData" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PeopleDataAttachment" Type="NorthernBordersProvinceDBModel.Store.PeopleDataAttachment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PeopleData">
+              <PropertyRef Name="PeopleData_Id" />
+            </Principal>
+            <Dependent Role="PeopleDataAttachment">
+              <PropertyRef Name="PeopleData_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PortalSet__Porta__47DBAE45">
+          <End Role="PortalSettingsUser" Type="NorthernBordersProvinceDBModel.Store.PortalSettingsUser" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PortalSettingsUserPermission" Type="NorthernBordersProvinceDBModel.Store.PortalSettingsUserPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PortalSettingsUser">
+              <PropertyRef Name="PortalSettingsUser_Id" />
+            </Principal>
+            <Dependent Role="PortalSettingsUserPermission">
+              <PropertyRef Name="PortalSettingsUser_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Provision__Provi__2CF2ADDF">
+          <End Role="ProvisionsMonitoringPage" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringPage" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ProvisionsMonitoringPageRole" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringPage">
+              <PropertyRef Name="ProvisionsMonitoringPage_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringPageRole">
+              <PropertyRef Name="ProvisionsMonitoringPage_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Provision__Provi__2DE6D218">
+          <End Role="ProvisionsMonitoringRole" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringRole" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ProvisionsMonitoringPageRole" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringRole">
+              <PropertyRef Name="ProvisionsMonitoringRole_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringPageRole">
+              <PropertyRef Name="ProvisionsMonitoringRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Provision__Provi__30C33EC3">
+          <End Role="ProvisionsMonitoringUser" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringUser" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ProvisionsMonitoringUserRole" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringUser">
+              <PropertyRef Name="ProvisionsMonitoringUser_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringUserRole">
+              <PropertyRef Name="ProvisionsMonitoringUser_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Provision__Provi__31B762FC">
+          <End Role="ProvisionsMonitoringPageRole" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringPageRole" Multiplicity="0..1" />
+          <End Role="ProvisionsMonitoringUserRole" Type="NorthernBordersProvinceDBModel.Store.ProvisionsMonitoringUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringPageRole">
+              <PropertyRef Name="ProvisionsMonitoringPageRole_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringUserRole">
+              <PropertyRef Name="ProvisionsMonitoringPageRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RuleDat__Peopl__59063A47">
+          <End Role="RuleData" Type="NorthernBordersProvinceDBModel.Store.RuleData" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RuleDataAttachment" Type="NorthernBordersProvinceDBModel.Store.RuleDataAttachment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleData">
+              <PropertyRef Name="RuleData_Id" />
+            </Principal>
+            <Dependent Role="RuleDataAttachment">
+              <PropertyRef Name="RuleData_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RuleData__Nation__55009F39">
+          <End Role="Nationality" Type="NorthernBordersProvinceDBModel.Store.Nationality" Multiplicity="0..1" />
+          <End Role="RuleData" Type="NorthernBordersProvinceDBModel.Store.RuleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nationality">
+              <PropertyRef Name="Nationality_Id" />
+            </Principal>
+            <Dependent Role="RuleData">
+              <PropertyRef Name="Nationality_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RuleData__RuleSu__540C7B00">
+          <End Role="RuleSubType" Type="NorthernBordersProvinceDBModel.Store.RuleSubType" Multiplicity="0..1" />
+          <End Role="RuleData" Type="NorthernBordersProvinceDBModel.Store.RuleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleSubType">
+              <PropertyRef Name="RuleSubType_Id" />
+            </Principal>
+            <Dependent Role="RuleData">
+              <PropertyRef Name="RuleSubType_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RuleSubTy__RuleT__51300E55">
+          <End Role="RuleType" Type="NorthernBordersProvinceDBModel.Store.RuleType" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RuleSubType" Type="NorthernBordersProvinceDBModel.Store.RuleSubType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleType">
+              <PropertyRef Name="RuleType_Id" />
+            </Principal>
+            <Dependent Role="RuleSubType">
+              <PropertyRef Name="RuleType_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SecurityA__Secur__6B24EA82">
+          <End Role="SecurityAffairsPage" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsPage" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SecurityAffairsPageRole" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsPage">
+              <PropertyRef Name="SecurityAffairsPage_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsPageRole">
+              <PropertyRef Name="SecurityAffairsPage_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SecurityA__Secur__6C190EBB">
+          <End Role="SecurityAffairsRole" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsRole" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SecurityAffairsPageRole" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsRole">
+              <PropertyRef Name="SecurityAffairsRole_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsPageRole">
+              <PropertyRef Name="SecurityAffairsRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SecurityA__Secur__6EF57B66">
+          <End Role="SecurityAffairsUser" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsUser" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SecurityAffairsUserRole" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsUser">
+              <PropertyRef Name="SecurityAffairsUser_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsUserRole">
+              <PropertyRef Name="SecurityAffairsUser_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SecurityA__Secur__6FE99F9F">
+          <End Role="SecurityAffairsPageRole" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsPageRole" Multiplicity="0..1" />
+          <End Role="SecurityAffairsUserRole" Type="NorthernBordersProvinceDBModel.Store.SecurityAffairsUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsPageRole">
+              <PropertyRef Name="SecurityAffairsPageRole_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsUserRole">
+              <PropertyRef Name="SecurityAffairsPageRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RuleData_RuleStatus">
+          <End Role="RuleStatus" Type="NorthernBordersProvinceDBModel.Store.RuleStatus" Multiplicity="0..1" />
+          <End Role="RuleData" Type="NorthernBordersProvinceDBModel.Store.RuleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleStatus">
+              <PropertyRef Name="RuleStatus_Id" />
+            </Principal>
+            <Dependent Role="RuleData">
+              <PropertyRef Name="RuleStatus_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="sp_AddProvisionsMonitoringUserLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProvisionsMonitoringUser_Id" Type="bigint" Mode="In" />
+          <Parameter Name="ProvisionsMonitoringPageRole_Id" Type="bigint" Mode="In" />
+          <Parameter Name="Note" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_AddSecurityAffairsUserLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SecurityAffairsUser_Id" Type="bigint" Mode="In" />
+          <Parameter Name="SecurityAffairsPageRole_Id" Type="bigint" Mode="In" />
+          <Parameter Name="Note" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_GetAnnouncementById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Announcement_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_GetEServices" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_GetGeorgianDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="HijiriiDate_DD_MM_YYYY" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_GetHijiriDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Date" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_GetNews" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_GetNewsById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="News_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_GetPeopleDataReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchName" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="SSN" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="DOBFrom" Type="date" Mode="In" />
+          <Parameter Name="DOBTo" Type="date" Mode="In" />
+          <Parameter Name="BirthPlace" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="ResidencePlace" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="EducationLevel_Id" Type="bigint" Mode="In" />
+          <Parameter Name="JobTitle" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="WorkPlace" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="HasNotes" Type="bit" Mode="In" />
+          <Parameter Name="HasNotNotes" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="sp_GetPortalSettingsUserPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PortalSettingsUser_Id" Type="bigint" Mode="In" />
+          <Parameter Name="PortalSettingsPage_Id" Type="bigint" Mode="In" />
+          <Parameter Name="PermissionType_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_GetPortalSettingsUserPermissions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PortalSettingsUser_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_GetProvisionsMonitoringUserPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ProvisionsMonitoringUser_Id" Type="bigint" Mode="In" />
+          <Parameter Name="ProvisionsMonitoringPageRole_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_GetProvisionsMonitoringUsersLogsReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="User_Id" Type="bigint" Mode="In" />
+          <Parameter Name="Page_Id" Type="bigint" Mode="In" />
+          <Parameter Name="Role_Id" Type="bigint" Mode="In" />
+          <Parameter Name="FromDate" Type="date" Mode="In" />
+          <Parameter Name="ToDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_GetRuleDataReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CaseNumber" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="RuleSubType_Id" Type="bigint" Mode="In" />
+          <Parameter Name="IssuedLetterNumber" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="IssuedLetterDateFrom" Type="date" Mode="In" />
+          <Parameter Name="IssuedLetterDateTo" Type="date" Mode="In" />
+          <Parameter Name="AccusedName" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Nationality_Id" Type="bigint" Mode="In" />
+          <Parameter Name="AccusedSSN" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Occupation" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="LegalDecisionNumber" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="LegalDecisionDateFrom" Type="date" Mode="In" />
+          <Parameter Name="LegalDecisionDateTo" Type="date" Mode="In" />
+          <Parameter Name="SupportingDecisionNumber" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="SupportingDecisionDateFrom" Type="date" Mode="In" />
+          <Parameter Name="SupportingDecisionDateTo" Type="date" Mode="In" />
+          <Parameter Name="RuleStatus_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_GetRuleDataReportByGrouping" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="GroupBy" Type="bigint" Mode="In" />
+          <Parameter Name="DateFrom" Type="date" Mode="In" />
+          <Parameter Name="DateTo" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_GetSecurityAffairsUserPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SecurityAffairsUser_Id" Type="bigint" Mode="In" />
+          <Parameter Name="SecurityAffairsPageRole_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_GetSecurityAffairsUsersLogsReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="User_Id" Type="bigint" Mode="In" />
+          <Parameter Name="Page_Id" Type="bigint" Mode="In" />
+          <Parameter Name="Role_Id" Type="bigint" Mode="In" />
+          <Parameter Name="FromDate" Type="date" Mode="In" />
+          <Parameter Name="ToDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="sp_IncreaseAnnouncementView" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Announcement_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_IncreaseNewsView" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="News_Id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="sp_PortalSettingsAuthentication" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Username" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_ProvisionsMonitoringAuthentication" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Username" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_SecurityAffairsAuthentication" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Username" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar(max)" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NorthernBordersProvinceDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="HomeSlides" EntityType="NorthernBordersProvinceDBModel.HomeSlide" />
+          <FunctionImport Name="GetNewsById" ReturnType="Collection(NorthernBordersProvinceDBModel.GetNewsById_Result)">
+          <Parameter Name="News_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="IncreaseNewsViewCount">
+          <Parameter Name="News_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="IncreaseAnnouncementViewCount">
+          <Parameter Name="Announcement_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="GetAnnouncementById" ReturnType="Collection(NorthernBordersProvinceDBModel.GetAnnouncementById_Result)">
+          <Parameter Name="Announcement_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="GetEServices_Result" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetEServices_Result)" />
+          <FunctionImport Name="PortalSettingsAuthentication" ReturnType="Collection(NorthernBordersProvinceDBModel.PortalSettingsAuthentication_Result)">
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetHijiriDate" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetHijiriDate_Result)">
+          <Parameter Name="Date" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="GetGeorgianDate" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetGeorgianDate_Result)">
+          <Parameter Name="HijiriiDate_DD_MM_YYYY" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="News" EntityType="NorthernBordersProvinceDBModel.News" />
+          <EntitySet Name="Announcements" EntityType="NorthernBordersProvinceDBModel.Announcement" />
+          <EntitySet Name="EServices" EntityType="NorthernBordersProvinceDBModel.EService" />
+          <EntitySet Name="ImportantLinks" EntityType="NorthernBordersProvinceDBModel.ImportantLink" />
+          <EntitySet Name="PortalSettingsUsers" EntityType="NorthernBordersProvinceDBModel.PortalSettingsUser" />
+          <FunctionImport Name="GetPortalSettingsUserPermission" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetPortalSettingsUserPermission_Result)">
+            <Parameter Name="PortalSettingsUser_Id" Mode="In" Type="Int64" />
+            <Parameter Name="PortalSettingsPage_Id" Mode="In" Type="Int64" />
+            <Parameter Name="PermissionType_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="GetPortalSettingsUserPermissions" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetPortalSettingsUserPermissions_Result)">
+          <Parameter Name="PortalSettingsUser_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <EntitySet Name="PortalSettingsUserPermissions" EntityType="NorthernBordersProvinceDBModel.PortalSettingsUserPermission" />
+          <AssociationSet Name="FK__PortalSet__Porta__47DBAE45" Association="NorthernBordersProvinceDBModel.FK__PortalSet__Porta__47DBAE45">
+            <End Role="PortalSettingsUser" EntitySet="PortalSettingsUsers" />
+            <End Role="PortalSettingsUserPermission" EntitySet="PortalSettingsUserPermissions" />
+          </AssociationSet>
+          <FunctionImport Name="SecurityAffairsAuthentication" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_SecurityAffairsAuthentication_Result)">
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="EducationLevels" EntityType="NorthernBordersProvinceDBModel.EducationLevel" />
+          <EntitySet Name="PeopleDatas" EntityType="NorthernBordersProvinceDBModel.PeopleData" />
+          <EntitySet Name="PeopleDataNotes" EntityType="NorthernBordersProvinceDBModel.PeopleDataNote" />
+          <AssociationSet Name="FK__PeopleDat__Educa__534D60F1" Association="NorthernBordersProvinceDBModel.FK__PeopleDat__Educa__534D60F1">
+            <End Role="EducationLevel" EntitySet="EducationLevels" />
+            <End Role="PeopleData" EntitySet="PeopleDatas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PeopleDat__Peopl__5629CD9C" Association="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__5629CD9C">
+            <End Role="PeopleData" EntitySet="PeopleDatas" />
+            <End Role="PeopleDataNote" EntitySet="PeopleDataNotes" />
+          </AssociationSet>
+          <EntitySet Name="PeopleDataAttachments" EntityType="NorthernBordersProvinceDBModel.PeopleDataAttachment" />
+          <AssociationSet Name="FK__PeopleDat__Peopl__59063A47" Association="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__59063A47">
+            <End Role="PeopleData" EntitySet="PeopleDatas" />
+            <End Role="PeopleDataAttachment" EntitySet="PeopleDataAttachments" />
+          </AssociationSet>
+          <EntitySet Name="SecurityAffairsUsers" EntityType="NorthernBordersProvinceDBModel.SecurityAffairsUser" />
+          <EntitySet Name="SecurityAffairsPageRoles" EntityType="NorthernBordersProvinceDBModel.SecurityAffairsPageRole" />
+          <EntitySet Name="SecurityAffairsUserRoles" EntityType="NorthernBordersProvinceDBModel.SecurityAffairsUserRole" />
+          <AssociationSet Name="FK__SecurityA__Secur__6FE99F9F" Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6FE99F9F">
+            <End Role="SecurityAffairsPageRole" EntitySet="SecurityAffairsPageRoles" />
+            <End Role="SecurityAffairsUserRole" EntitySet="SecurityAffairsUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SecurityA__Secur__6EF57B66" Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6EF57B66">
+            <End Role="SecurityAffairsUser" EntitySet="SecurityAffairsUsers" />
+            <End Role="SecurityAffairsUserRole" EntitySet="SecurityAffairsUserRoles" />
+          </AssociationSet>
+          <FunctionImport Name="GetPeopleDataReport" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetPeopleDataReport_Result)">
+            <Parameter Name="SearchName" Mode="In" Type="String" />
+            <Parameter Name="SSN" Mode="In" Type="String" />
+            <Parameter Name="DOBFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="DOBTo" Mode="In" Type="DateTime" />
+            <Parameter Name="BirthPlace" Mode="In" Type="String" />
+            <Parameter Name="ResidencePlace" Mode="In" Type="String" />
+            <Parameter Name="EducationLevel_Id" Mode="In" Type="Int64" />
+            <Parameter Name="JobTitle" Mode="In" Type="String" />
+            <Parameter Name="WorkPlace" Mode="In" Type="String" />
+            <Parameter Name="HasNotes" Mode="In" Type="Boolean" />
+            <Parameter Name="HasNotNotes" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="GetSecurityAffairsUsersLogsReport" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetSecurityAffairsUsersLogsReport_Result)">
+            <Parameter Name="User_Id" Mode="In" Type="Int64" />
+            <Parameter Name="Page_Id" Mode="In" Type="Int64" />
+            <Parameter Name="Role_Id" Mode="In" Type="Int64" />
+            <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+            <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="GetSecurityAffairsUserPermission" ReturnType="Collection(NorthernBordersProvinceDBModel.GetSecurityAffairsUserPermission_Result)">
+            <Parameter Name="SecurityAffairsUser_Id" Mode="In" Type="Int64" />
+            <Parameter Name="SecurityAffairsPageRole_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="AddSecurityAffairsUserLog">
+            <Parameter Name="SecurityAffairsUser_Id" Mode="In" Type="Int64" />
+            <Parameter Name="SecurityAffairsPageRole_Id" Mode="In" Type="Int64" />
+            <Parameter Name="Note" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="SecurityAffairsPages" EntityType="NorthernBordersProvinceDBModel.SecurityAffairsPage" />
+          <EntitySet Name="SecurityAffairsRoles" EntityType="NorthernBordersProvinceDBModel.SecurityAffairsRole" />
+          <AssociationSet Name="FK__SecurityA__Secur__6B24EA82" Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6B24EA82">
+            <End Role="SecurityAffairsPage" EntitySet="SecurityAffairsPages" />
+            <End Role="SecurityAffairsPageRole" EntitySet="SecurityAffairsPageRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SecurityA__Secur__6C190EBB" Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6C190EBB">
+            <End Role="SecurityAffairsRole" EntitySet="SecurityAffairsRoles" />
+            <End Role="SecurityAffairsPageRole" EntitySet="SecurityAffairsPageRoles" />
+          </AssociationSet>
+          <EntitySet Name="ProvisionsMonitoringUsers" EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringUser" />
+          <FunctionImport Name="ProvisionsMonitoringAuthentication" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_ProvisionsMonitoringAuthentication_Result)">
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="RuleDatas" EntityType="NorthernBordersProvinceDBModel.RuleData" />
+          <EntitySet Name="RuleStatus" EntityType="NorthernBordersProvinceDBModel.RuleStatu" />
+          <AssociationSet Name="FK_RuleData_RuleStatus" Association="NorthernBordersProvinceDBModel.FK_RuleData_RuleStatus">
+            <End Role="RuleStatu" EntitySet="RuleStatus" />
+            <End Role="RuleData" EntitySet="RuleDatas" />
+          </AssociationSet>
+          <EntitySet Name="RuleDataAttachments" EntityType="NorthernBordersProvinceDBModel.RuleDataAttachment" />
+          <AssociationSet Name="FK__RuleDat__Peopl__59063A47" Association="NorthernBordersProvinceDBModel.FK__RuleDat__Peopl__59063A47">
+            <End Role="RuleData" EntitySet="RuleDatas" />
+            <End Role="RuleDataAttachment" EntitySet="RuleDataAttachments" />
+          </AssociationSet>
+          <FunctionImport Name="GetRuleDataReport" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetRuleDataReport_Result)">
+            <Parameter Name="CaseNumber" Mode="In" Type="String" />
+            <Parameter Name="RuleSubType_Id" Mode="In" Type="Int64" />
+            <Parameter Name="IssuedLetterNumber" Mode="In" Type="String" />
+            <Parameter Name="IssuedLetterDateFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="IssuedLetterDateTo" Mode="In" Type="DateTime" />
+            <Parameter Name="AccusedName" Mode="In" Type="String" />
+            <Parameter Name="Nationality_Id" Mode="In" Type="Int64" />
+            <Parameter Name="AccusedSSN" Mode="In" Type="String" />
+            <Parameter Name="Occupation" Mode="In" Type="String" />
+            <Parameter Name="LegalDecisionNumber" Mode="In" Type="String" />
+            <Parameter Name="LegalDecisionDateFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="LegalDecisionDateTo" Mode="In" Type="DateTime" />
+            <Parameter Name="SupportingDecisionNumber" Mode="In" Type="String" />
+            <Parameter Name="SupportingDecisionDateFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="SupportingDecisionDateTo" Mode="In" Type="DateTime" />
+            <Parameter Name="RuleStatus_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <EntitySet Name="ProvisionsMonitoringPages" EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringPage" />
+          <EntitySet Name="ProvisionsMonitoringPageRoles" EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringPageRole" />
+          <EntitySet Name="ProvisionsMonitoringRoles" EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringRole" />
+          <EntitySet Name="ProvisionsMonitoringUserRoles" EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringUserRole" />
+          <AssociationSet Name="FK__Provision__Provi__2CF2ADDF" Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__2CF2ADDF">
+            <End Role="ProvisionsMonitoringPage" EntitySet="ProvisionsMonitoringPages" />
+            <End Role="ProvisionsMonitoringPageRole" EntitySet="ProvisionsMonitoringPageRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Provision__Provi__2DE6D218" Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__2DE6D218">
+            <End Role="ProvisionsMonitoringRole" EntitySet="ProvisionsMonitoringRoles" />
+            <End Role="ProvisionsMonitoringPageRole" EntitySet="ProvisionsMonitoringPageRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Provision__Provi__31B762FC" Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__31B762FC">
+            <End Role="ProvisionsMonitoringPageRole" EntitySet="ProvisionsMonitoringPageRoles" />
+            <End Role="ProvisionsMonitoringUserRole" EntitySet="ProvisionsMonitoringUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Provision__Provi__30C33EC3" Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__30C33EC3">
+            <End Role="ProvisionsMonitoringUser" EntitySet="ProvisionsMonitoringUsers" />
+            <End Role="ProvisionsMonitoringUserRole" EntitySet="ProvisionsMonitoringUserRoles" />
+          </AssociationSet>
+          <FunctionImport Name="AddProvisionsMonitoringUserLog">
+            <Parameter Name="ProvisionsMonitoringUser_Id" Mode="In" Type="Int64" />
+            <Parameter Name="ProvisionsMonitoringPageRole_Id" Mode="In" Type="Int64" />
+            <Parameter Name="Note" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetProvisionsMonitoringUserPermission" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetProvisionsMonitoringUserPermission_Result)">
+            <Parameter Name="ProvisionsMonitoringUser_Id" Mode="In" Type="Int64" />
+            <Parameter Name="ProvisionsMonitoringPageRole_Id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="GetProvisionsMonitoringUsersLogsReport" ReturnType="Collection(NorthernBordersProvinceDBModel.sp_GetProvisionsMonitoringUsersLogsReport_Result)">
+            <Parameter Name="User_Id" Mode="In" Type="Int64" />
+            <Parameter Name="Page_Id" Mode="In" Type="Int64" />
+            <Parameter Name="Role_Id" Mode="In" Type="Int64" />
+            <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+            <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <EntitySet Name="Nationalities" EntityType="NorthernBordersProvinceDBModel.Nationality" />
+          <EntitySet Name="RuleSubTypes" EntityType="NorthernBordersProvinceDBModel.RuleSubType" />
+          <EntitySet Name="RuleTypes" EntityType="NorthernBordersProvinceDBModel.RuleType" />
+          <AssociationSet Name="FK__RuleData__Nation__55009F39" Association="NorthernBordersProvinceDBModel.FK__RuleData__Nation__55009F39">
+            <End Role="Nationality" EntitySet="Nationalities" />
+            <End Role="RuleData" EntitySet="RuleDatas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RuleData__RuleSu__540C7B00" Association="NorthernBordersProvinceDBModel.FK__RuleData__RuleSu__540C7B00">
+            <End Role="RuleSubType" EntitySet="RuleSubTypes" />
+            <End Role="RuleData" EntitySet="RuleDatas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RuleSubTy__RuleT__51300E55" Association="NorthernBordersProvinceDBModel.FK__RuleSubTy__RuleT__51300E55">
+            <End Role="RuleType" EntitySet="RuleTypes" />
+            <End Role="RuleSubType" EntitySet="RuleSubTypes" />
+          </AssociationSet>
+          <FunctionImport Name="GetRuleDataReportByGrouping" ReturnType="Collection(NorthernBordersProvinceDBModel.GetRuleDataReportByGrouping_Result)">
+            <Parameter Name="GroupBy" Mode="In" Type="Int64" />
+            <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="HomeSlide">
+          <Key>
+            <PropertyRef Name="HomeSlide_Id" />
+          </Key>
+          <Property Name="HomeSlide_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="RedirectingLink" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <ComplexType Name="GetNewsById_Result">
+          <Property Type="Int64" Name="News_Id" Nullable="true" />
+          <Property Type="String" Name="ImageUrl" Nullable="true" />
+          <Property Type="String" Name="Title" Nullable="true" />
+          <Property Type="String" Name="Contents" Nullable="true" />
+          <Property Type="String" Name="NewsDate" Nullable="true" />
+          <Property Type="Int64" Name="ViewCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetAnnouncementById_Result">
+          <Property Type="Int64" Name="Announcement_Id" Nullable="true" />
+          <Property Type="String" Name="Title" Nullable="true" />
+          <Property Type="String" Name="Number" Nullable="true" />
+          <Property Type="String" Name="AnnounementDate" Nullable="true" />
+          <Property Type="Int64" Name="ViewCount" Nullable="true" />
+          <Property Type="String" Name="Link" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetEServices_Result">
+          <Property Type="Int64" Name="EService_Id" Nullable="true" />
+          <Property Type="String" Name="Title" Nullable="true" />
+          <Property Type="String" Name="Link" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetHijiriDate_Result">
+          <Property Type="String" Name="Date" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetGeorgianDate_Result">
+          <Property Type="DateTime" Name="Date" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="News_Id" />
+          </Key>
+          <Property Type="Int64" Name="News_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ImageUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Contents" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NewsDate" />
+          <Property Type="Int64" Name="ViewCount" />
+        </EntityType>
+        <EntityType Name="Announcement">
+          <Key>
+            <PropertyRef Name="Announcement_Id" />
+          </Key>
+          <Property Type="Int64" Name="Announcement_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Link" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Number" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" />
+          <Property Type="Int64" Name="ViewCount" />
+        </EntityType>
+        <EntityType Name="EService">
+          <Key>
+            <PropertyRef Name="EService_Id" />
+          </Key>
+          <Property Type="Int64" Name="EService_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Link" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ImportantLink">
+          <Key>
+            <PropertyRef Name="ImportantLink_Id" />
+          </Key>
+          <Property Type="Int64" Name="ImportantLink_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Link" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PortalSettingsUser">
+          <Key>
+            <PropertyRef Name="PortalSettingsUser_Id" />
+          </Key>
+          <Property Type="Int64" Name="PortalSettingsUser_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Username" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LocalLoginPassword" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Activated" />
+          <NavigationProperty Name="PortalSettingsUserPermissions" Relationship="NorthernBordersProvinceDBModel.FK__PortalSet__Porta__47DBAE45" FromRole="PortalSettingsUser" ToRole="PortalSettingsUserPermission" />
+        </EntityType>
+        <ComplexType Name="PortalSettingsAuthentication_Result">
+          <Property Type="Int64" Name="PortalSettingsUser_Id" Nullable="false" />
+          <Property Type="String" Name="Username" Nullable="true" />
+          <Property Type="String" Name="LocalLoginPassword" Nullable="true" />
+          <Property Type="Boolean" Name="Activated" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetPortalSettingsUserPermission_Result">
+          <Property Type="Boolean" Name="IsAuthorized" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetPortalSettingsUserPermissions_Result">
+          <Property Type="Int64" Name="PortalSettingsUser_Id" Nullable="true" />
+          <Property Type="Int64" Name="PortalSettingsPage_Id" Nullable="true" />
+          <Property Type="Int64" Name="PortalSettingsUserPermission_Id" Nullable="true" />
+          <Property Type="String" Name="PortalSettingsPageTitle" Nullable="true" MaxLength="255" />
+          <Property Type="Boolean" Name="CanView" Nullable="true" />
+          <Property Type="Boolean" Name="CanAdd" Nullable="true" />
+          <Property Type="Boolean" Name="CanEdit" Nullable="true" />
+          <Property Type="Boolean" Name="CanDelete" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="PortalSettingsUserPermission">
+          <Key>
+            <PropertyRef Name="PortalSettingsUserPermission_Id" />
+          </Key>
+          <Property Type="Int64" Name="PortalSettingsUserPermission_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="PortalSettingsUser_Id" />
+          <Property Type="Int64" Name="PortalSettingsPage_Id" />
+          <Property Type="Boolean" Name="CanView" />
+          <Property Type="Boolean" Name="CanAdd" />
+          <Property Type="Boolean" Name="CanEdit" />
+          <Property Type="Boolean" Name="CanDelete" />
+          <NavigationProperty Name="PortalSettingsUser" Relationship="NorthernBordersProvinceDBModel.FK__PortalSet__Porta__47DBAE45" FromRole="PortalSettingsUserPermission" ToRole="PortalSettingsUser" />
+        </EntityType>
+        <Association Name="FK__PortalSet__Porta__47DBAE45">
+          <End Type="NorthernBordersProvinceDBModel.PortalSettingsUser" Role="PortalSettingsUser" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.PortalSettingsUserPermission" Role="PortalSettingsUserPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PortalSettingsUser">
+              <PropertyRef Name="PortalSettingsUser_Id" />
+            </Principal>
+            <Dependent Role="PortalSettingsUserPermission">
+              <PropertyRef Name="PortalSettingsUser_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_SecurityAffairsAuthentication_Result">
+          <Property Type="Int64" Name="SecurityAffairsUser_Id" Nullable="false" />
+          <Property Type="String" Name="Username" Nullable="true" />
+          <Property Type="String" Name="LocalLoginPassword" Nullable="true" />
+          <Property Type="Boolean" Name="Activated" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="EducationLevel">
+          <Key>
+            <PropertyRef Name="EducationLevel_Id" />
+          </Key>
+          <Property Type="Int64" Name="EducationLevel_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PeopleDatas" Relationship="NorthernBordersProvinceDBModel.FK__PeopleDat__Educa__534D60F1" FromRole="EducationLevel" ToRole="PeopleData" />
+        </EntityType>
+        <EntityType Name="PeopleData">
+          <Key>
+            <PropertyRef Name="PeopleData_Id" />
+          </Key>
+          <Property Type="Int64" Name="PeopleData_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FullName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SSN" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DOB" />
+          <Property Type="String" Name="BirthPlace" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ResidencePlace" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="EducationLevel_Id" />
+          <Property Type="String" Name="JobTitle" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="WorkPlace" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EducationLevel" Relationship="NorthernBordersProvinceDBModel.FK__PeopleDat__Educa__534D60F1" FromRole="PeopleData" ToRole="EducationLevel" />
+          <NavigationProperty Name="PeopleDataNotes" Relationship="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__5629CD9C" FromRole="PeopleData" ToRole="PeopleDataNote" />
+          <NavigationProperty Name="PeopleDataAttachments" Relationship="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__59063A47" FromRole="PeopleData" ToRole="PeopleDataAttachment" />
+        </EntityType>
+        <EntityType Name="PeopleDataNote">
+          <Key>
+            <PropertyRef Name="PeopeDataNote_Id" />
+          </Key>
+          <Property Type="Int64" Name="PeopeDataNote_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Content" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="PeopleData_Id" />
+          <NavigationProperty Name="PeopleData" Relationship="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__5629CD9C" FromRole="PeopleDataNote" ToRole="PeopleData" />
+        </EntityType>
+        <Association Name="FK__PeopleDat__Educa__534D60F1">
+          <End Type="NorthernBordersProvinceDBModel.EducationLevel" Role="EducationLevel" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.PeopleData" Role="PeopleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationLevel">
+              <PropertyRef Name="EducationLevel_Id" />
+            </Principal>
+            <Dependent Role="PeopleData">
+              <PropertyRef Name="EducationLevel_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PeopleDat__Peopl__5629CD9C">
+          <End Type="NorthernBordersProvinceDBModel.PeopleData" Role="PeopleData" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.PeopleDataNote" Role="PeopleDataNote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PeopleData">
+              <PropertyRef Name="PeopleData_Id" />
+            </Principal>
+            <Dependent Role="PeopleDataNote">
+              <PropertyRef Name="PeopleData_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PeopleDataAttachment">
+          <Key>
+            <PropertyRef Name="PeopleDataAttachment_Id" />
+          </Key>
+          <Property Type="Int64" Name="PeopleDataAttachment_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Url" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="UploadedDate" />
+          <Property Type="Time" Name="UploadedTime" />
+          <Property Type="Int64" Name="PeopleData_Id" />
+          <NavigationProperty Name="PeopleData" Relationship="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__59063A47" FromRole="PeopleDataAttachment" ToRole="PeopleData" />
+        </EntityType>
+        <Association Name="FK__PeopleDat__Peopl__59063A47">
+          <End Type="NorthernBordersProvinceDBModel.PeopleData" Role="PeopleData" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.PeopleDataAttachment" Role="PeopleDataAttachment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PeopleData">
+              <PropertyRef Name="PeopleData_Id" />
+            </Principal>
+            <Dependent Role="PeopleDataAttachment">
+              <PropertyRef Name="PeopleData_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SecurityAffairsUser">
+          <Key>
+            <PropertyRef Name="SecurityAffairsUser_Id" />
+          </Key>
+          <Property Type="Int64" Name="SecurityAffairsUser_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Username" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LocalLoginPassword" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Activated" />
+          <NavigationProperty Name="SecurityAffairsUserRoles" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6EF57B66" FromRole="SecurityAffairsUser" ToRole="SecurityAffairsUserRole" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsPageRole">
+          <Key>
+            <PropertyRef Name="SecurityAffairsPageRole_Id" />
+          </Key>
+          <Property Type="Int64" Name="SecurityAffairsPageRole_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="SecurityAffairsPage_Id" />
+          <Property Type="Int64" Name="SecurityAffairsRole_Id" />
+          <NavigationProperty Name="SecurityAffairsUserRoles" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6FE99F9F" FromRole="SecurityAffairsPageRole" ToRole="SecurityAffairsUserRole" />
+          <NavigationProperty Name="SecurityAffairsPage" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6B24EA82" FromRole="SecurityAffairsPageRole" ToRole="SecurityAffairsPage" />
+          <NavigationProperty Name="SecurityAffairsRole" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6C190EBB" FromRole="SecurityAffairsPageRole" ToRole="SecurityAffairsRole" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsUserRole">
+          <Key>
+            <PropertyRef Name="SecurityAffairsUserRole_Id" />
+          </Key>
+          <Property Type="Int64" Name="SecurityAffairsUserRole_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="SecurityAffairsUser_Id" />
+          <Property Type="Int64" Name="SecurityAffairsPageRole_Id" />
+          <NavigationProperty Name="SecurityAffairsPageRole" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6FE99F9F" FromRole="SecurityAffairsUserRole" ToRole="SecurityAffairsPageRole" />
+          <NavigationProperty Name="SecurityAffairsUser" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6EF57B66" FromRole="SecurityAffairsUserRole" ToRole="SecurityAffairsUser" />
+        </EntityType>
+        <Association Name="FK__SecurityA__Secur__6FE99F9F">
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsPageRole" Role="SecurityAffairsPageRole" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsUserRole" Role="SecurityAffairsUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsPageRole">
+              <PropertyRef Name="SecurityAffairsPageRole_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsUserRole">
+              <PropertyRef Name="SecurityAffairsPageRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SecurityA__Secur__6EF57B66">
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsUser" Role="SecurityAffairsUser" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsUserRole" Role="SecurityAffairsUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsUser">
+              <PropertyRef Name="SecurityAffairsUser_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsUserRole">
+              <PropertyRef Name="SecurityAffairsUser_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_GetPeopleDataReport_Result">
+          <Property Type="Int64" Name="PeopleDate_Id" Nullable="true" />
+          <Property Type="String" Name="PeopleDate_Id_string" Nullable="true" />
+          <Property Type="String" Name="FullName" Nullable="true" />
+          <Property Type="String" Name="SSN" Nullable="true" />
+          <Property Type="DateTime" Name="DOB" Nullable="true" />
+          <Property Type="String" Name="DOB_string" Nullable="true" />
+          <Property Type="String" Name="BirthPlace" Nullable="true" />
+          <Property Type="String" Name="ResidencePlace" Nullable="true" />
+          <Property Type="String" Name="EducationLevelString" Nullable="true" />
+          <Property Type="String" Name="JobTitle" Nullable="true" />
+          <Property Type="String" Name="WorkPlace" Nullable="true" />
+          <Property Type="String" Name="HasNotes" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetSecurityAffairsUsersLogsReport_Result">
+          <Property Type="String" Name="Date_string" Nullable="true" />
+          <Property Type="String" Name="Time_string" Nullable="true" />
+          <Property Type="String" Name="Username" Nullable="true" />
+          <Property Type="String" Name="PageTitle" Nullable="true" />
+          <Property Type="String" Name="RoleTitle" Nullable="true" />
+          <Property Type="String" Name="Note" Nullable="true" />
+          <Property Type="Int64" Name="UserLog_Id" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetSecurityAffairsUserPermission_Result">
+          <Property Type="Boolean" Name="IsAuthorized" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetSecurityAffairsUserPermission_Result">
+          <Property Type="Boolean" Name="IsAuthorized" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="SecurityAffairsPage">
+          <Key>
+            <PropertyRef Name="SecurityAffairsPage_Id" />
+          </Key>
+          <Property Type="Int64" Name="SecurityAffairsPage_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SecurityAffairsPageRoles" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6B24EA82" FromRole="SecurityAffairsPage" ToRole="SecurityAffairsPageRole" />
+        </EntityType>
+        <EntityType Name="SecurityAffairsRole">
+          <Key>
+            <PropertyRef Name="SecurityAffairsRole_Id" />
+          </Key>
+          <Property Type="Int64" Name="SecurityAffairsRole_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SecurityAffairsPageRoles" Relationship="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6C190EBB" FromRole="SecurityAffairsRole" ToRole="SecurityAffairsPageRole" />
+        </EntityType>
+        <Association Name="FK__SecurityA__Secur__6B24EA82">
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsPage" Role="SecurityAffairsPage" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsPageRole" Role="SecurityAffairsPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsPage">
+              <PropertyRef Name="SecurityAffairsPage_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsPageRole">
+              <PropertyRef Name="SecurityAffairsPage_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SecurityA__Secur__6C190EBB">
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsRole" Role="SecurityAffairsRole" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.SecurityAffairsPageRole" Role="SecurityAffairsPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SecurityAffairsRole">
+              <PropertyRef Name="SecurityAffairsRole_Id" />
+            </Principal>
+            <Dependent Role="SecurityAffairsPageRole">
+              <PropertyRef Name="SecurityAffairsRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ProvisionsMonitoringUser">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringUser_Id" />
+          </Key>
+          <Property Type="Int64" Name="ProvisionsMonitoringUser_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Username" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LocalLoginPassword" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Activated" />
+          <NavigationProperty Name="ProvisionsMonitoringUserRoles" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__30C33EC3" FromRole="ProvisionsMonitoringUser" ToRole="ProvisionsMonitoringUserRole" />
+        </EntityType>
+        <ComplexType Name="sp_ProvisionsMonitoringAuthentication_Result">
+          <Property Type="Int64" Name="ProvisionsMonitoringUser_Id" Nullable="false" />
+          <Property Type="String" Name="Username" Nullable="true" />
+          <Property Type="String" Name="LocalLoginPassword" Nullable="true" />
+          <Property Type="Boolean" Name="Activated" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="RuleData">
+          <Key>
+            <PropertyRef Name="RuleData_Id" />
+          </Key>
+          <Property Type="Int64" Name="RuleData_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CaseNumber" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IssuedLetterNumber" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="IssuedLetterDate" />
+          <Property Type="String" Name="AccusedName" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AccusedSSN" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LegalDecisionNumber" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="LegalDecisionDate" />
+          <Property Type="String" Name="SupportingDecisionNumber" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SupportingDecisionDate" />
+          <Property Type="Int64" Name="RuleStatus_Id" />
+          <NavigationProperty Name="RuleStatu" Relationship="NorthernBordersProvinceDBModel.FK_RuleData_RuleStatus" FromRole="RuleData" ToRole="RuleStatu" />
+          <NavigationProperty Name="RuleDataAttachments" Relationship="NorthernBordersProvinceDBModel.FK__RuleDat__Peopl__59063A47" FromRole="RuleData" ToRole="RuleDataAttachment" />
+          <Property Type="Int64" Name="RuleSubType_Id" />
+          <Property Type="String" Name="Occupation" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="Nationality_Id" />
+          <NavigationProperty Name="Nationality" Relationship="NorthernBordersProvinceDBModel.FK__RuleData__Nation__55009F39" FromRole="RuleData" ToRole="Nationality" />
+          <NavigationProperty Name="RuleSubType" Relationship="NorthernBordersProvinceDBModel.FK__RuleData__RuleSu__540C7B00" FromRole="RuleData" ToRole="RuleSubType" />
+        </EntityType>
+        <EntityType Name="RuleStatu">
+          <Key>
+            <PropertyRef Name="RuleStatus_Id" />
+          </Key>
+          <Property Type="Int64" Name="RuleStatus_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="RuleDatas" Relationship="NorthernBordersProvinceDBModel.FK_RuleData_RuleStatus" FromRole="RuleStatu" ToRole="RuleData" />
+        </EntityType>
+        <Association Name="FK_RuleData_RuleStatus">
+          <End Type="NorthernBordersProvinceDBModel.RuleStatu" Role="RuleStatu" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.RuleData" Role="RuleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleStatu">
+              <PropertyRef Name="RuleStatus_Id" />
+            </Principal>
+            <Dependent Role="RuleData">
+              <PropertyRef Name="RuleStatus_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="RuleDataAttachment">
+          <Key>
+            <PropertyRef Name="RuleDataAttachment_Id" />
+          </Key>
+          <Property Type="Int64" Name="RuleDataAttachment_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Url" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="UploadedDate" />
+          <Property Type="Time" Name="UploadedTime" />
+          <Property Type="Int64" Name="RuleData_Id" />
+          <NavigationProperty Name="RuleData" Relationship="NorthernBordersProvinceDBModel.FK__RuleDat__Peopl__59063A47" FromRole="RuleDataAttachment" ToRole="RuleData" />
+        </EntityType>
+        <Association Name="FK__RuleDat__Peopl__59063A47">
+          <End Type="NorthernBordersProvinceDBModel.RuleData" Role="RuleData" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.RuleDataAttachment" Role="RuleDataAttachment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleData">
+              <PropertyRef Name="RuleData_Id" />
+            </Principal>
+            <Dependent Role="RuleDataAttachment">
+              <PropertyRef Name="RuleData_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_GetRuleDataReport_Result">
+          <Property Type="Int64" Name="RuleDate_Id" Nullable="true" />
+          <Property Type="String" Name="RuleDate_Id_string" Nullable="true" />
+          <Property Type="String" Name="CaseNumber" Nullable="true" />
+          <Property Type="String" Name="IssuedLetterNumber" Nullable="true" />
+          <Property Type="DateTime" Name="IssuedLetterDate" Nullable="true" />
+          <Property Type="String" Name="IssuedLetterDate_string" Nullable="true" />
+          <Property Type="String" Name="AccusedName" Nullable="true" />
+          <Property Type="String" Name="AccusedSSN" Nullable="true" />
+          <Property Type="String" Name="LegalDecisionNumber" Nullable="true" />
+          <Property Type="DateTime" Name="LegalDecisionDate" Nullable="true" />
+          <Property Type="String" Name="LegalDecisionDate_string" Nullable="true" />
+          <Property Type="String" Name="SupportingDecisionNumber" Nullable="true" />
+          <Property Type="DateTime" Name="SupportingDecisionDate" Nullable="true" />
+          <Property Type="String" Name="SupportingDecisionDate_string" Nullable="true" />
+          <Property Type="String" Name="RuleStatusTitle" Nullable="true" />
+          <Property Type="String" Name="RuleTypeTitle" Nullable="true" />
+          <Property Type="String" Name="NationalityTitle" Nullable="true" />
+          <Property Type="String" Name="Occupation" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="ProvisionsMonitoringPage">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringPage_Id" />
+          </Key>
+          <Property Type="Int64" Name="ProvisionsMonitoringPage_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ProvisionsMonitoringPageRoles" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__2CF2ADDF" FromRole="ProvisionsMonitoringPage" ToRole="ProvisionsMonitoringPageRole" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringPageRole">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringPageRole_Id" />
+          </Key>
+          <Property Type="Int64" Name="ProvisionsMonitoringPageRole_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ProvisionsMonitoringPage_Id" />
+          <Property Type="Int64" Name="ProvisionsMonitoringRole_Id" />
+          <NavigationProperty Name="ProvisionsMonitoringPage" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__2CF2ADDF" FromRole="ProvisionsMonitoringPageRole" ToRole="ProvisionsMonitoringPage" />
+          <NavigationProperty Name="ProvisionsMonitoringRole" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__2DE6D218" FromRole="ProvisionsMonitoringPageRole" ToRole="ProvisionsMonitoringRole" />
+          <NavigationProperty Name="ProvisionsMonitoringUserRoles" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__31B762FC" FromRole="ProvisionsMonitoringPageRole" ToRole="ProvisionsMonitoringUserRole" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringRole">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringRole_Id" />
+          </Key>
+          <Property Type="Int64" Name="ProvisionsMonitoringRole_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ProvisionsMonitoringPageRoles" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__2DE6D218" FromRole="ProvisionsMonitoringRole" ToRole="ProvisionsMonitoringPageRole" />
+        </EntityType>
+        <EntityType Name="ProvisionsMonitoringUserRole">
+          <Key>
+            <PropertyRef Name="ProvisionsMonitoringUserRole_Id" />
+          </Key>
+          <Property Type="Int64" Name="ProvisionsMonitoringUserRole_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="ProvisionsMonitoringUser_Id" />
+          <Property Type="Int64" Name="ProvisionsMonitoringPageRole_Id" />
+          <NavigationProperty Name="ProvisionsMonitoringPageRole" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__31B762FC" FromRole="ProvisionsMonitoringUserRole" ToRole="ProvisionsMonitoringPageRole" />
+          <NavigationProperty Name="ProvisionsMonitoringUser" Relationship="NorthernBordersProvinceDBModel.FK__Provision__Provi__30C33EC3" FromRole="ProvisionsMonitoringUserRole" ToRole="ProvisionsMonitoringUser" />
+        </EntityType>
+        <Association Name="FK__Provision__Provi__2CF2ADDF">
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringPage" Role="ProvisionsMonitoringPage" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringPageRole" Role="ProvisionsMonitoringPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringPage">
+              <PropertyRef Name="ProvisionsMonitoringPage_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringPageRole">
+              <PropertyRef Name="ProvisionsMonitoringPage_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Provision__Provi__2DE6D218">
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringRole" Role="ProvisionsMonitoringRole" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringPageRole" Role="ProvisionsMonitoringPageRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringRole">
+              <PropertyRef Name="ProvisionsMonitoringRole_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringPageRole">
+              <PropertyRef Name="ProvisionsMonitoringRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Provision__Provi__31B762FC">
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringPageRole" Role="ProvisionsMonitoringPageRole" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringUserRole" Role="ProvisionsMonitoringUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringPageRole">
+              <PropertyRef Name="ProvisionsMonitoringPageRole_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringUserRole">
+              <PropertyRef Name="ProvisionsMonitoringPageRole_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Provision__Provi__30C33EC3">
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringUser" Role="ProvisionsMonitoringUser" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.ProvisionsMonitoringUserRole" Role="ProvisionsMonitoringUserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProvisionsMonitoringUser">
+              <PropertyRef Name="ProvisionsMonitoringUser_Id" />
+            </Principal>
+            <Dependent Role="ProvisionsMonitoringUserRole">
+              <PropertyRef Name="ProvisionsMonitoringUser_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_GetProvisionsMonitoringUserPermission_Result">
+          <Property Type="Boolean" Name="IsAuthorized" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetProvisionsMonitoringUsersLogsReport_Result">
+          <Property Type="Int64" Name="UserLog_Id" Nullable="true" />
+          <Property Type="String" Name="Date_string" Nullable="true" />
+          <Property Type="String" Name="Time_string" Nullable="true" />
+          <Property Type="String" Name="Username" Nullable="true" />
+          <Property Type="String" Name="PageTitle" Nullable="true" />
+          <Property Type="String" Name="RoleTitle" Nullable="true" />
+          <Property Type="String" Name="Note" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="Nationality">
+          <Key>
+            <PropertyRef Name="Nationality_Id" />
+          </Key>
+          <Property Type="Int64" Name="Nationality_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="RuleDatas" Relationship="NorthernBordersProvinceDBModel.FK__RuleData__Nation__55009F39" FromRole="Nationality" ToRole="RuleData" />
+        </EntityType>
+        <EntityType Name="RuleSubType">
+          <Key>
+            <PropertyRef Name="RuleSubType_Id" />
+          </Key>
+          <Property Type="Int64" Name="RuleSubType_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="RuleType_Id" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="RuleDatas" Relationship="NorthernBordersProvinceDBModel.FK__RuleData__RuleSu__540C7B00" FromRole="RuleSubType" ToRole="RuleData" />
+          <NavigationProperty Name="RuleType" Relationship="NorthernBordersProvinceDBModel.FK__RuleSubTy__RuleT__51300E55" FromRole="RuleSubType" ToRole="RuleType" />
+        </EntityType>
+        <EntityType Name="RuleType">
+          <Key>
+            <PropertyRef Name="RuleType_Id" />
+          </Key>
+          <Property Type="Int64" Name="RuleType_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Title" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="RuleSubTypes" Relationship="NorthernBordersProvinceDBModel.FK__RuleSubTy__RuleT__51300E55" FromRole="RuleType" ToRole="RuleSubType" />
+        </EntityType>
+        <Association Name="FK__RuleData__Nation__55009F39">
+          <End Type="NorthernBordersProvinceDBModel.Nationality" Role="Nationality" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.RuleData" Role="RuleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nationality">
+              <PropertyRef Name="Nationality_Id" />
+            </Principal>
+            <Dependent Role="RuleData">
+              <PropertyRef Name="Nationality_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RuleData__RuleSu__540C7B00">
+          <End Type="NorthernBordersProvinceDBModel.RuleSubType" Role="RuleSubType" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.RuleData" Role="RuleData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleSubType">
+              <PropertyRef Name="RuleSubType_Id" />
+            </Principal>
+            <Dependent Role="RuleData">
+              <PropertyRef Name="RuleSubType_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RuleSubTy__RuleT__51300E55">
+          <End Type="NorthernBordersProvinceDBModel.RuleType" Role="RuleType" Multiplicity="0..1" />
+          <End Type="NorthernBordersProvinceDBModel.RuleSubType" Role="RuleSubType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RuleType">
+              <PropertyRef Name="RuleType_Id" />
+            </Principal>
+            <Dependent Role="RuleSubType">
+              <PropertyRef Name="RuleType_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="GetRuleDataReportByGrouping_Result">
+          <Property Type="String" Name="Title" Nullable="true" />
+          <Property Type="Int64" Name="NumberOfRules" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NorthernBordersProvinceDBModelStoreContainer" CdmEntityContainer="DBEntities">
+          <EntitySetMapping Name="HomeSlides">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.HomeSlide">
+              <MappingFragment StoreEntitySet="HomeSlide">
+                <ScalarProperty Name="HomeSlide_Id" ColumnName="HomeSlide_Id" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RedirectingLink" ColumnName="RedirectingLink" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetNewsById" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetNewsById">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetNewsById_Result">
+                <ScalarProperty Name="News_Id" ColumnName="News_Id" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="NewsDate" ColumnName="NewsDate" />
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="IncreaseNewsViewCount" FunctionName="NorthernBordersProvinceDBModel.Store.sp_IncreaseNewsView" />
+          <FunctionImportMapping FunctionImportName="IncreaseAnnouncementViewCount" FunctionName="NorthernBordersProvinceDBModel.Store.sp_IncreaseAnnouncementView" />
+          <FunctionImportMapping FunctionImportName="GetAnnouncementById" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetAnnouncementById">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetAnnouncementById_Result">
+                <ScalarProperty Name="Announcement_Id" ColumnName="Announcement_Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="AnnounementDate" ColumnName="AnnounementDate" />
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetEServices_Result" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetEServices">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetEServices_Result">
+                <ScalarProperty Name="EService_Id" ColumnName="EService_Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="PortalSettingsAuthentication" FunctionName="NorthernBordersProvinceDBModel.Store.sp_PortalSettingsAuthentication" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.PortalSettingsAuthentication_Result">
+                <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetHijiriDate" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetHijiriDate">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetHijiriDate_Result">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetGeorgianDate" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetGeorgianDate">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetGeorgianDate_Result">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="NewsDate" ColumnName="NewsDate" />
+                <ScalarProperty Name="Contents" ColumnName="Contents" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="News_Id" ColumnName="News_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Announcements">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.Announcement">
+              <MappingFragment StoreEntitySet="Announcement">
+                <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Announcement_Id" ColumnName="Announcement_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EServices">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.EService">
+              <MappingFragment StoreEntitySet="EService">
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="EService_Id" ColumnName="EService_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImportantLinks">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ImportantLink">
+              <MappingFragment StoreEntitySet="ImportantLink">
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ImportantLink_Id" ColumnName="ImportantLink_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PortalSettingsUsers">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PortalSettingsUser">
+              <MappingFragment StoreEntitySet="PortalSettingsUser">
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+                <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetPortalSettingsUserPermission" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetPortalSettingsUserPermission">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetPortalSettingsUserPermission_Result">
+                <ScalarProperty Name="IsAuthorized" ColumnName="IsAuthorized" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetPortalSettingsUserPermissions" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetPortalSettingsUserPermissions">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetPortalSettingsUserPermissions_Result">
+                <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+                <ScalarProperty Name="PortalSettingsPage_Id" ColumnName="PortalSettingsPage_Id" />
+                <ScalarProperty Name="PortalSettingsUserPermission_Id" ColumnName="PortalSettingsUserPermission_Id" />
+                <ScalarProperty Name="PortalSettingsPageTitle" ColumnName="PortalSettingsPageTitle" />
+                <ScalarProperty Name="CanView" ColumnName="CanView" />
+                <ScalarProperty Name="CanAdd" ColumnName="CanAdd" />
+                <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+                <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="PortalSettingsUserPermissions">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PortalSettingsUserPermission">
+              <MappingFragment StoreEntitySet="PortalSettingsUserPermission">
+                <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+                <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+                <ScalarProperty Name="CanAdd" ColumnName="CanAdd" />
+                <ScalarProperty Name="CanView" ColumnName="CanView" />
+                <ScalarProperty Name="PortalSettingsPage_Id" ColumnName="PortalSettingsPage_Id" />
+                <ScalarProperty Name="PortalSettingsUser_Id" ColumnName="PortalSettingsUser_Id" />
+                <ScalarProperty Name="PortalSettingsUserPermission_Id" ColumnName="PortalSettingsUserPermission_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SecurityAffairsAuthentication" FunctionName="NorthernBordersProvinceDBModel.Store.sp_SecurityAffairsAuthentication">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_SecurityAffairsAuthentication_Result">
+                <ScalarProperty Name="SecurityAffairsUser_Id" ColumnName="SecurityAffairsUser_Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="EducationLevels">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.EducationLevel">
+              <MappingFragment StoreEntitySet="EducationLevel">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="EducationLevel_Id" ColumnName="EducationLevel_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PeopleDatas">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PeopleData">
+              <MappingFragment StoreEntitySet="PeopleData">
+                <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="EducationLevel_Id" ColumnName="EducationLevel_Id" />
+                <ScalarProperty Name="ResidencePlace" ColumnName="ResidencePlace" />
+                <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="SSN" ColumnName="SSN" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="PeopleData_Id" ColumnName="PeopleData_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PeopleDataNotes">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PeopleDataNote">
+              <MappingFragment StoreEntitySet="PeopleDataNote">
+                <ScalarProperty Name="PeopleData_Id" ColumnName="PeopleData_Id" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="PeopeDataNote_Id" ColumnName="PeopeDataNote_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PeopleDataAttachments">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.PeopleDataAttachment">
+              <MappingFragment StoreEntitySet="PeopleDataAttachment">
+                <ScalarProperty Name="PeopleData_Id" ColumnName="PeopleData_Id" />
+                <ScalarProperty Name="UploadedTime" ColumnName="UploadedTime" />
+                <ScalarProperty Name="UploadedDate" ColumnName="UploadedDate" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="PeopleDataAttachment_Id" ColumnName="PeopleDataAttachment_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SecurityAffairsUsers">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsUser">
+              <MappingFragment StoreEntitySet="SecurityAffairsUser">
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+                <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="SecurityAffairsUser_Id" ColumnName="SecurityAffairsUser_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SecurityAffairsPageRoles">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsPageRole">
+              <MappingFragment StoreEntitySet="SecurityAffairsPageRole">
+                <ScalarProperty Name="SecurityAffairsRole_Id" ColumnName="SecurityAffairsRole_Id" />
+                <ScalarProperty Name="SecurityAffairsPage_Id" ColumnName="SecurityAffairsPage_Id" />
+                <ScalarProperty Name="SecurityAffairsPageRole_Id" ColumnName="SecurityAffairsPageRole_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SecurityAffairsUserRoles">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsUserRole">
+              <MappingFragment StoreEntitySet="SecurityAffairsUserRole">
+                <ScalarProperty Name="SecurityAffairsPageRole_Id" ColumnName="SecurityAffairsPageRole_Id" />
+                <ScalarProperty Name="SecurityAffairsUser_Id" ColumnName="SecurityAffairsUser_Id" />
+                <ScalarProperty Name="SecurityAffairsUserRole_Id" ColumnName="SecurityAffairsUserRole_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetPeopleDataReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetPeopleDataReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetPeopleDataReport_Result">
+                <ScalarProperty Name="PeopleDate_Id" ColumnName="PeopleDate_Id" />
+                <ScalarProperty Name="PeopleDate_Id_string" ColumnName="PeopleDate_Id_string" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="SSN" ColumnName="SSN" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="DOB_string" ColumnName="DOB_string" />
+                <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+                <ScalarProperty Name="ResidencePlace" ColumnName="ResidencePlace" />
+                <ScalarProperty Name="EducationLevelString" ColumnName="EducationLevelString" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+                <ScalarProperty Name="HasNotes" ColumnName="HasNotes" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetSecurityAffairsUsersLogsReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetSecurityAffairsUsersLogsReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetSecurityAffairsUsersLogsReport_Result">
+                <ScalarProperty Name="Date_string" ColumnName="Date_string" />
+                <ScalarProperty Name="Time_string" ColumnName="Time_string" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+                <ScalarProperty Name="RoleTitle" ColumnName="RoleTitle" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="UserLog_Id" ColumnName="UserLog_Id" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetSecurityAffairsUserPermission" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetSecurityAffairsUserPermission">
+          <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetSecurityAffairsUserPermission_Result">
+                <ScalarProperty Name="IsAuthorized" ColumnName="IsAuthorized" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="AddSecurityAffairsUserLog" FunctionName="NorthernBordersProvinceDBModel.Store.sp_AddSecurityAffairsUserLog" />
+          <EntitySetMapping Name="SecurityAffairsPages">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsPage">
+              <MappingFragment StoreEntitySet="SecurityAffairsPage">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="SecurityAffairsPage_Id" ColumnName="SecurityAffairsPage_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SecurityAffairsRoles">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.SecurityAffairsRole">
+              <MappingFragment StoreEntitySet="SecurityAffairsRole">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="SecurityAffairsRole_Id" ColumnName="SecurityAffairsRole_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProvisionsMonitoringUsers">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringUser">
+              <MappingFragment StoreEntitySet="ProvisionsMonitoringUser">
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+                <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="ProvisionsMonitoringUser_Id" ColumnName="ProvisionsMonitoringUser_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ProvisionsMonitoringAuthentication" FunctionName="NorthernBordersProvinceDBModel.Store.sp_ProvisionsMonitoringAuthentication">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_ProvisionsMonitoringAuthentication_Result">
+                <ScalarProperty Name="ProvisionsMonitoringUser_Id" ColumnName="ProvisionsMonitoringUser_Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="LocalLoginPassword" ColumnName="LocalLoginPassword" />
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="RuleDatas">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleData">
+              <MappingFragment StoreEntitySet="RuleData">
+                <ScalarProperty Name="Nationality_Id" ColumnName="Nationality_Id" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="RuleSubType_Id" ColumnName="RuleSubType_Id" />
+                <ScalarProperty Name="RuleStatus_Id" ColumnName="RuleStatus_Id" />
+                <ScalarProperty Name="SupportingDecisionDate" ColumnName="SupportingDecisionDate" />
+                <ScalarProperty Name="SupportingDecisionNumber" ColumnName="SupportingDecisionNumber" />
+                <ScalarProperty Name="LegalDecisionDate" ColumnName="LegalDecisionDate" />
+                <ScalarProperty Name="LegalDecisionNumber" ColumnName="LegalDecisionNumber" />
+                <ScalarProperty Name="AccusedSSN" ColumnName="AccusedSSN" />
+                <ScalarProperty Name="AccusedName" ColumnName="AccusedName" />
+                <ScalarProperty Name="IssuedLetterDate" ColumnName="IssuedLetterDate" />
+                <ScalarProperty Name="IssuedLetterNumber" ColumnName="IssuedLetterNumber" />
+                <ScalarProperty Name="CaseNumber" ColumnName="CaseNumber" />
+                <ScalarProperty Name="RuleData_Id" ColumnName="RuleData_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RuleStatus">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleStatu">
+              <MappingFragment StoreEntitySet="RuleStatus">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="RuleStatus_Id" ColumnName="RuleStatus_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RuleDataAttachments">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleDataAttachment">
+              <MappingFragment StoreEntitySet="RuleDataAttachment">
+                <ScalarProperty Name="RuleData_Id" ColumnName="RuleData_Id" />
+                <ScalarProperty Name="UploadedTime" ColumnName="UploadedTime" />
+                <ScalarProperty Name="UploadedDate" ColumnName="UploadedDate" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RuleDataAttachment_Id" ColumnName="RuleDataAttachment_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetRuleDataReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetRuleDataReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetRuleDataReport_Result">
+                <ScalarProperty Name="RuleDate_Id" ColumnName="RuleDate_Id" />
+                <ScalarProperty Name="RuleDate_Id_string" ColumnName="RuleDate_Id_string" />
+                <ScalarProperty Name="CaseNumber" ColumnName="CaseNumber" />
+                <ScalarProperty Name="IssuedLetterNumber" ColumnName="IssuedLetterNumber" />
+                <ScalarProperty Name="IssuedLetterDate" ColumnName="IssuedLetterDate" />
+                <ScalarProperty Name="IssuedLetterDate_string" ColumnName="IssuedLetterDate_string" />
+                <ScalarProperty Name="AccusedName" ColumnName="AccusedName" />
+                <ScalarProperty Name="AccusedSSN" ColumnName="AccusedSSN" />
+                <ScalarProperty Name="LegalDecisionNumber" ColumnName="LegalDecisionNumber" />
+                <ScalarProperty Name="LegalDecisionDate" ColumnName="LegalDecisionDate" />
+                <ScalarProperty Name="LegalDecisionDate_string" ColumnName="LegalDecisionDate_string" />
+                <ScalarProperty Name="SupportingDecisionNumber" ColumnName="SupportingDecisionNumber" />
+                <ScalarProperty Name="SupportingDecisionDate" ColumnName="SupportingDecisionDate" />
+                <ScalarProperty Name="SupportingDecisionDate_string" ColumnName="SupportingDecisionDate_string" />
+                <ScalarProperty Name="RuleStatusTitle" ColumnName="RuleStatusTitle" />
+                <ScalarProperty Name="RuleTypeTitle" ColumnName="RuleTypeTitle" />
+                <ScalarProperty Name="NationalityTitle" ColumnName="NationalityTitle" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="ProvisionsMonitoringPages">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringPage">
+              <MappingFragment StoreEntitySet="ProvisionsMonitoringPage">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ProvisionsMonitoringPage_Id" ColumnName="ProvisionsMonitoringPage_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProvisionsMonitoringPageRoles">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringPageRole">
+              <MappingFragment StoreEntitySet="ProvisionsMonitoringPageRole">
+                <ScalarProperty Name="ProvisionsMonitoringRole_Id" ColumnName="ProvisionsMonitoringRole_Id" />
+                <ScalarProperty Name="ProvisionsMonitoringPage_Id" ColumnName="ProvisionsMonitoringPage_Id" />
+                <ScalarProperty Name="ProvisionsMonitoringPageRole_Id" ColumnName="ProvisionsMonitoringPageRole_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProvisionsMonitoringRoles">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringRole">
+              <MappingFragment StoreEntitySet="ProvisionsMonitoringRole">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ProvisionsMonitoringRole_Id" ColumnName="ProvisionsMonitoringRole_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProvisionsMonitoringUserRoles">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.ProvisionsMonitoringUserRole">
+              <MappingFragment StoreEntitySet="ProvisionsMonitoringUserRole">
+                <ScalarProperty Name="ProvisionsMonitoringPageRole_Id" ColumnName="ProvisionsMonitoringPageRole_Id" />
+                <ScalarProperty Name="ProvisionsMonitoringUser_Id" ColumnName="ProvisionsMonitoringUser_Id" />
+                <ScalarProperty Name="ProvisionsMonitoringUserRole_Id" ColumnName="ProvisionsMonitoringUserRole_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="AddProvisionsMonitoringUserLog" FunctionName="NorthernBordersProvinceDBModel.Store.sp_AddProvisionsMonitoringUserLog" />
+          <FunctionImportMapping FunctionImportName="GetProvisionsMonitoringUserPermission" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetProvisionsMonitoringUserPermission">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetProvisionsMonitoringUserPermission_Result">
+                <ScalarProperty Name="IsAuthorized" ColumnName="IsAuthorized" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetProvisionsMonitoringUsersLogsReport" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetProvisionsMonitoringUsersLogsReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.sp_GetProvisionsMonitoringUsersLogsReport_Result">
+                <ScalarProperty Name="UserLog_Id" ColumnName="UserLog_Id" />
+                <ScalarProperty Name="Date_string" ColumnName="Date_string" />
+                <ScalarProperty Name="Time_string" ColumnName="Time_string" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+                <ScalarProperty Name="RoleTitle" ColumnName="RoleTitle" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="Nationalities">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.Nationality">
+              <MappingFragment StoreEntitySet="Nationality">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Nationality_Id" ColumnName="Nationality_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RuleSubTypes">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleSubType">
+              <MappingFragment StoreEntitySet="RuleSubType">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="RuleType_Id" ColumnName="RuleType_Id" />
+                <ScalarProperty Name="RuleSubType_Id" ColumnName="RuleSubType_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RuleTypes">
+            <EntityTypeMapping TypeName="NorthernBordersProvinceDBModel.RuleType">
+              <MappingFragment StoreEntitySet="RuleType">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="RuleType_Id" ColumnName="RuleType_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetRuleDataReportByGrouping" FunctionName="NorthernBordersProvinceDBModel.Store.sp_GetRuleDataReportByGrouping">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NorthernBordersProvinceDBModel.GetRuleDataReportByGrouping_Result">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="NumberOfRules" ColumnName="NumberOfRules" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DBModel">
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.HomeSlide" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.News" Width="1.5" PointX="3.375" PointY="0.75" Height="2.1725878906249996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.Announcement" Width="1.5" PointX="0.75" PointY="3.75" Height="2.1725878906249996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.EService" Width="1.5" PointX="3.375" PointY="3.75" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.ImportantLink" Width="1.5" PointX="5.375" PointY="0.75" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.PortalSettingsUser" Width="1.5" PointX="5.375" PointY="3.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.PortalSettingsUserPermission" Width="1.5" PointX="7.625" PointY="3.5" Height="2.5571907552083317" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__PortalSet__Porta__47DBAE45" >
+          <ConnectorPoint PointX="6.875" PointY="4.7401432291666667" />
+          <ConnectorPoint PointX="7.625" PointY="4.7401432291666667" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.EducationLevel" Width="1.5" PointX="0.75" PointY="9.375" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.PeopleData" Width="1.5" PointX="3" PointY="8.5" Height="3.3263964843749996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.PeopleDataNote" Width="1.5" PointX="5.25" PointY="10.625" Height="1.787985026041671" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__PeopleDat__Educa__534D60F1" >
+          <ConnectorPoint PointX="2.25" PointY="10.172841796875" />
+          <ConnectorPoint PointX="3" PointY="10.172841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__5629CD9C" >
+          <ConnectorPoint PointX="4.5" PointY="11.2256982421875" />
+          <ConnectorPoint PointX="5.25" PointY="11.2256982421875" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.PeopleDataAttachment" Width="1.5" PointX="5.25" PointY="7" Height="2.3648893229166745" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__PeopleDat__Peopl__59063A47" >
+          <ConnectorPoint PointX="4.5" PointY="8.9324446614583373" />
+          <ConnectorPoint PointX="5.25" PointY="8.9324446614583373" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.SecurityAffairsUser" Width="1.5" PointX="7.375" PointY="0.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.SecurityAffairsPageRole" Width="1.5" PointX="7.375" PointY="13.875" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.SecurityAffairsUserRole" Width="1.5" PointX="9.625" PointY="0.75" Height="1.9802864583333386" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6FE99F9F" >
+          <ConnectorPoint PointX="8.125" PointY="13.875" />
+          <ConnectorPoint PointX="8.125" PointY="9.9802864583333317" />
+          <ConnectorPoint PointX="9.125" PointY="9.9802864583333317" />
+          <ConnectorPoint PointX="9.125" PointY="6.3071907552083317" />
+          <ConnectorPoint PointX="9.375" PointY="6.3071907552083317" />
+          <ConnectorPoint PointX="9.375" PointY="2.2664668437500035" />
+          <ConnectorPoint PointX="9.625" PointY="2.2664668437500035" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6EF57B66" >
+          <ConnectorPoint PointX="8.875" PointY="1.7401432291666672" />
+          <ConnectorPoint PointX="9.625" PointY="1.7401432291666672" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.SecurityAffairsPage" Width="1.5" PointX="5.125" PointY="14" Height="1.5956835937500031" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.SecurityAffairsRole" Width="1.5" PointX="5.125" PointY="16.375" Height="1.5956835937500031" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6B24EA82" >
+          <ConnectorPoint PointX="6.625" PointY="14.797841796875002" />
+          <ConnectorPoint PointX="7.375" PointY="14.797841796875002" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__SecurityA__Secur__6C190EBB" >
+          <ConnectorPoint PointX="6.625" PointY="17.172841796875" />
+          <ConnectorPoint PointX="8.125" PointY="17.172841796875" />
+          <ConnectorPoint PointX="8.125" PointY="16.047587890625" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringUser" Width="1.5" PointX="7.375" PointY="7.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.RuleData" Width="1.5" PointX="11.625" PointY="8" Height="3.3263964843750031" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.RuleStatu" Width="1.5" PointX="9.375" PointY="8.875" Height="1.5956835937500031" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK_RuleData_RuleStatus" >
+          <ConnectorPoint PointX="10.875" PointY="9.6728417968750016" />
+          <ConnectorPoint PointX="11.625" PointY="9.6728417968750016" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.RuleDataAttachment" Width="1.5" PointX="13.875" PointY="8.625" Height="2.3648893229166674" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__RuleDat__Peopl__59063A47" >
+          <ConnectorPoint PointX="13.125" PointY="9.8074446614583337" />
+          <ConnectorPoint PointX="13.416666666666666" PointY="9.8074446614583337" />
+          <ConnectorPoint PointX="13.583333333333334" PointY="9.8074446614583337" />
+          <ConnectorPoint PointX="13.875" PointY="9.8074446614583337" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringPage" Width="1.5" PointX="10.375" PointY="4.25" Height="1.5956835937500031" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringPageRole" Width="1.5" PointX="12.625" PointY="3.875" Height="2.1725878906250067" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringRole" Width="1.5" PointX="10.375" PointY="13.25" Height="1.595683593749996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.ProvisionsMonitoringUserRole" Width="1.5" PointX="14.875" PointY="5.875" Height="1.9802864583333388" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__2CF2ADDF" >
+          <ConnectorPoint PointX="11.875" PointY="5.0478417968750016" />
+          <ConnectorPoint PointX="12.625" PointY="5.0478417968750016" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__2DE6D218" >
+          <ConnectorPoint PointX="11.875" PointY="14.047841796874998" />
+          <ConnectorPoint PointX="12.119789166666665" PointY="14.047841796874998" />
+          <ConnectorPoint PointX="12.286455833333333" PointY="14.047841796874998" />
+          <ConnectorPoint PointX="12.447916666666666" PointY="14.047841796874998" />
+          <ConnectorPoint PointX="12.614583333333334" PointY="14.047841796874998" />
+          <ConnectorPoint PointX="13.5" PointY="14.047841796874998" />
+          <ConnectorPoint PointX="13.5" PointY="6.0475878906250067" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__31B762FC" >
+          <ConnectorPoint PointX="14.125" PointY="4.8749994999999995" />
+          <ConnectorPoint PointX="15.625" PointY="4.8749994999999995" />
+          <ConnectorPoint PointX="15.625" PointY="5.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__Provision__Provi__30C33EC3" >
+          <ConnectorPoint PointX="7.46875" PointY="7.75" />
+          <ConnectorPoint PointX="7.46875" PointY="7.0285948776041653" />
+          <ConnectorPoint PointX="9.0416666666666661" PointY="7.0285948776041645" />
+          <ConnectorPoint PointX="9.2083333333333339" PointY="7.0285948776041653" />
+          <ConnectorPoint PointX="13.416666666666666" PointY="7.0285948776041645" />
+          <ConnectorPoint PointX="13.583333333333334" PointY="7.0285948776041653" />
+          <ConnectorPoint PointX="14.875" PointY="7.0285948776041653" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.Nationality" Width="1.5" PointX="9.375" PointY="18.125" Height="1.595683593749996" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.RuleSubType" Width="1.5" PointX="9.375" PointY="20.375" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="NorthernBordersProvinceDBModel.RuleType" Width="1.5" PointX="7.125" PointY="20.625" Height="1.595683593749996" />
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__RuleData__Nation__55009F39" >
+          <ConnectorPoint PointX="10.875" PointY="18.922841796874998" />
+          <ConnectorPoint PointX="12.119789166666665" PointY="18.922841796874998" />
+          <ConnectorPoint PointX="12.286455833333333" PointY="18.922841796874998" />
+          <ConnectorPoint PointX="12.53125" PointY="18.922841796874998" />
+          <ConnectorPoint PointX="12.53125" PointY="12.480205078125001" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__RuleData__RuleSu__540C7B00" >
+          <ConnectorPoint PointX="10.875" PointY="21.365143229166669" />
+          <ConnectorPoint PointX="12.2031225" PointY="21.365143229166669" />
+          <ConnectorPoint PointX="12.2031225" PointY="12.480205078125001" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthernBordersProvinceDBModel.FK__RuleSubTy__RuleT__51300E55" >
+          <ConnectorPoint PointX="8.625" PointY="21.422841796874998" />
+          <ConnectorPoint PointX="9.375" PointY="21.422841796874998" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

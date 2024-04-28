@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProvisionsMonitoring.Master.cs" Inherits="NorthernBordersProvince.ProvisionsMonitoring" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server" lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>البوابة الإلكترونية لإمارة الحدود الشمالية</title>
+    <link href="../Styles/PortalStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function DisableMenuButton(btnID) {
+            var btn = document.getElementById(btnID);
+            btn.className = 'DisabledMenuButton';
+            btn.disabled = true;
+            for (var i = 0; i <= btn.childNodes.length - 1; i++) {
+                btn.childNodes[i].disabled = true;
+            }
+        }
+        function DisableSettingButton() {
+            var btn = document.getElementById("btnSettings");
+            btn.className = 'DisabledMenuButton';
+            btn.disabled = true;
+            for (var i = 0; i <= btn.childNodes.length - 1; i++) {
+                btn.childNodes[i].disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="ContainerDiv">
+            <div class="HeaderDiv">
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                        <a href="default.aspx"><img src="../Images/Logo.png" alt="Logo" /></a>
+                        </td>
+                        <td style="text-align: left; font-size: 18pt; vertical-align: top; padding: 20px 0px; font-weight: bold; color: rgb(20,158,83);">
+                            قاعدة بيانات متابعة تنفيذ الأحكام</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="MenuDiv">
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <ul class="Menu">
+                              <li class="BorderLeft">
+                                  <a id="btnRuleData" href="RuleDataMain.aspx" class="MenuButton">
+                                        <img src="../Images/MenuButtonsImages/Case.png" alt="بيانات الأشخاص"/>
+                                        <br />
+                                        <label>الأحكام</label>
+                                  </a>
+                              </li>
+                              <li class="BorderLeft">
+                                  <a id="btnReports" href="ReportsMain.aspx" class="MenuButton">
+                                        <img src="../Images/MenuButtonsImages/Report.png" alt="التقارير"/>
+                                        <br />
+                                        <label>التقارير</label>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a id="btnSettings" href="SettingsMain.aspx" class="MenuButton">
+                                        <img src="../Images/MenuButtonsImages/Settings.png" alt="الإعدادت"/>
+                                        <br />
+                                        <label>الإعدادت</label>
+                                  </a>
+                              </li>
+                            </ul>
+                        </td>
+                        <td style="text-align: right; width: 75px; vertical-align:middle;">
+                            <ul class="Menu">
+                              <li style="margin:5px;">
+                                  <a id="btnLogout" href="../default.aspx" class="RotatingMenuButton" onclick="return confirm('هل تريد تأكيد الخروج من النظام');">
+                                        <img src="../Images/MenuButtonsImages/Signout.png" style="width:45px; height: 45px;" alt="إغلاق"/>
+                                  </a>
+                              </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ContentsDiv">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="FooterDiv">
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                        1438 هـ © إمارة منطقة الحدود الشمالية
+                        </td>
+                        <td style="text-align:left;">
+                        برمجة مؤسسة الحلول البناءة للاتصالات وتقنية المعلومات www.consolcit.com
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

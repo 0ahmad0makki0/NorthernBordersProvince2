@@ -1,0 +1,70 @@
+/* Demo CSS - You do not need this css in your own slider */
+
+body{
+}
+
+pre{
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 20px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: rgb(22,130,54);
+	border: 1px solid #CCC;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#container
+{
+    padding-left: 45px;
+    padding-right: 45px;
+	margin:0 auto;
+	padding-bottom:25px;
+}
+
+#banner-fade,
+#banner-slide{
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background:rgb(20,158,83);
+	color:White;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:White;
+	color:rgb(20,158,83);
+}
+
+ol.bjqs-markers li a{
+	padding:0px 10px;
+	background: rgb(20,158,83);
+	color:White;
+	margin: 0px 5px;
+	margin-top: 10px;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background: Black;
+	color: White;
+}
+
+p.bjqs-caption{
+	background: rgba(255,255,255,0.75);
+	font-weight: bold;
+	color: rgb(22,130,54);
+}
